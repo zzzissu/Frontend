@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form_method</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="post" accept-charset="utf-8">
+      <fieldset>
+        <legend>개인 정보 입력</legend>
+        이름<input type="text" name="name" /><br />
+        나이<input type="number" name="age" /><br /><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!--
+  post방식은 몸체에 폼데이터를 싣어 보낸다(어려움. 보안에 좋음)
+  accept-charset: 문자 인코딩 타입
+-->

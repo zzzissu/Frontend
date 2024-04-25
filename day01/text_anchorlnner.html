@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Text anchorInner</title>
+  </head>
+  <body>
+    <a href="http://naver.com">네이버</a><br />
+    <a href="http://google.com">구글</a><br />
+    <a href="#one">1절 이동</a><br />
+    <a href="#two">2절 이동</a>
+    <hr />
+    <h1 id="one">애국가 1절</h1>
+    <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</p>
+    <h1 id="two">애국가 2절</h1>
+    <p>남산 위에 저 소나무 철갑을 두른 듯 바람서리 불변함은 우리 기상일세</p>
+  </body>
+</html>
+
+<!--
+  <a>태그는 웹페이지로 이동하거나 웹페이지 내부로도 이동이 가능
+  href속성에 "#id속성" 형태의 문자열을 입력
+  id를 중복하면 첫번째 id로 이동
+  "#": 웹표준에 따른 빈 링크를 나타냄(임시 링크)
+-->
+
+<!-- 이렇게도 가능(참고)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0 auto;
+      }
+      #two,
+      #one {
+        height: 1000px;
+        width: 100%;
+      }
+      #two {
+        background-color: #db9494;
+      }
+      #one {
+        background-color: #8cebde;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com">naver</a><br />
+    <a href="https://google.com">google</a><br />
+
+    <a href="#one">One</a><br />
+    <a href="#two">Two</a><br />
+    <hr />
+    <div id="one">
+      <h1>One</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <div id="two">
+      <h1>two</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+  </body>
+</html>
+
+-->

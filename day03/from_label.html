@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form_label</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name">user</label>
+      <input type="text" id="name" /><br />
+      <label for="phone">tel</label>
+      <input type="tel" id="phone" placeholder="전화번호를 입력하세요" />
+      <hr />
+      <input type="email" /><br />
+      <input type="color" /><br />
+      <input type="date" /><br />
+      <input type="search" /><br />
+    </form>
+  </body>
+</html>
+<!--
+    <label for="name">user</label> : user에 커서를 갖다대도 text란에 입력할 수 있게 해줌
+    입력 양식은 form태그로 먼저 영역 설정하고 내부에 input태그를 만든다
+    form태그가 없으면 전송되지 않음
+    <label>태그의 for 속성은 레이블을 클릭하면 입력창으로 이동
+    placeholder: 입력창의 안내문구
+
+    <style>
+      <속성태그> {
+        display: inline-block;          // 창 정렬하기
+        width: 30px;
+      }
+    </style>
+-->

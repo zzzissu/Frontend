@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form_method</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>개인 정보 입력</legend>
+        이름<input type="text" name="name" /><br />
+        나이<input type="number" name="age" /><br /><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!--
+    <fieldset>: <fieldset>안에 있는 문구들을 블럭처리 해줌
+    action속성에는 폼데이터가 전달된 url을 명시
+    action="http://210.119.14.85:8080/form.jsp"
+    method속성에는 전송방식을 나타내준다
+    get: 보안 문제우려, 전송방식이 간단함(주소url 끝에 ?이후부터 사용자가 입력한 데이터가 전송됨)
+-->

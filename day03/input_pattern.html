@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>input_pattern</title>
+  </head>
+  <body>
+    <form>
+      생년월일 <input type="text" name="birthday" pattern="[0-9]{6}" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+
+<!--
+     pattern="[0-9]{6}": 정규표현식으로 설정해놓은 크기와 맞지 않으면 경고 안내문이 뜸
+-->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form_radio</title>
+    <style>
+      fieldset {
+        display: inline-block;
+        width: 230px;
+      }
+    </style>
+  </head>
+  <body>
+    <from>
+      <fieldset>
+        <legend><b>[가입]</b></legend>
+        <label for="username">이름</label>
+        <input type="text" name="user" id="username" /><br />
+        성별
+        <input type="radio" name="gender" id="man" value="m" /> 남자
+        <input type="radio" name="gender" id="woman" value="w" />
+        여자<br /><br />
+        <input type="submit" value="가입" /> <button>취소</button>
+      </fieldset>
+    </from>
+  </body>
+</html>
