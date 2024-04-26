@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>게시판 입력 양식</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        display: flex;
+      }
+      textarea {
+        width: 250px;
+        height: 100px;
+        margin: 10px 0;
+        resize: none;
+      }
+      div {
+        text-align: center;
+        display: inline-block;
+        /* display: flex; */
+      }
+      b {
+        width: 53px;
+      }
+      .word {
+        display: flex;
+        align-items: center;
+      }
+      .word > b {
+        display: flex;
+      }
+      input {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>글 작성하기</h1>
+    <form action="#" method="get">
+      <b>작성자 </b><input type="text" name="user" /><br />
+      <b>아이디 </b><input type="text" name="id" /><br />
+      <b>이메일 </b><input type="text" name="mail" /> @
+      <input type="text" name="mailadd" /><br /><b>휴대폰 </b>
+      <select>
+        <option selected>010</option>
+        <option>011</option>
+      </select>
+      <b>- </b> <input type="number" name="tel1" /> <b>- </b>
+      <input type="number" name="tel2" /><br />
+      <b>글제목 </b><input type="text" name="title" /><br />
+      <div class="word">
+        <b>내용 </b>
+        <textarea></textarea>
+      </div>
+
+      <br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+
+<!--
+    display: flex; 정렬
+    margin: 5px 0; 줄 위아래 외부 간격
+-->
