@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      p {
+        color: black;
+      }
+      p:nth-child(2) {
+        color: blue;
+      }
+      h1 {
+        color: rgb(243, 107, 107) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: green">레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 레드향이라고 불린다</p>
+    <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+    <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+  </body>
+</html>
+
+<!--
+    동일하게 적용하는 경우는 마지막의 스타일이 적용된다.
+    첫번째 테스트인 h1태그에는 타입 스타일과 인라인 스타일 모드 사용
+    우선순위가 타입 스타일 정의에 있는 !important이 더 높아 타입 스타일이 적용됨
+-->
