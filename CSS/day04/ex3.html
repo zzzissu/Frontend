@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #top {
+        background-color: pink;
+      }
+      #bottom {
+        background-color: lightpink;
+      }
+      #middle {
+        overflow: hidden;
+      }
+      #left {
+        float: left;
+        width: 150px;
+        background: rgb(250, 146, 163);
+      }
+      #right {
+        float: left;
+        width: 350px;
+        background: rgb(253, 81, 109);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+      inventore eligendi, porro similique voluptate nam mollitia tempora nulla
+      eos velit molestiae vitae magni libero, totam animi quo optio modi. Unde.
+    </div>
+    <div id="middle">
+      <div id="left">
+        ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+      </div>
+      <div id="right">
+        eligendi, porro similique voluptate nam mollitia tempora nulla eos velit
+        molestiae vitae magni libero, totam animi quo optio modi. Unde.
+      </div>
+    </div>
+    <div id="bottom">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur
+      sequi voluptatibus numquam soluta veniam natus doloremque maxime officiis
+      commodi. Consequuntur, libero! Saepe totam error nobis suscipit reiciendis
+      architecto facere.
+    </div>
+  </body>
+</html>
+
+<!--
+    부모태그에 고정된 너비를 입력 (500px)
+    수평 정렬하는 부모태그의 overflow 속성에 hidden
+    자손태그는 너비를 입력하고 float속성을 적용한다.
+-->

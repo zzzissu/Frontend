@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .box:nth-child(1) {
+        background-color: pink;
+        left: 10px;
+        top: 10px;
+        z-index: 10;
+      }
+      .box:nth-child(2) {
+        background-color: rgb(255, 167, 182);
+        left: 50px;
+        top: 50px;
+        z-index: 5;
+      }
+      .box:nth-child(3) {
+        background-color: rgb(255, 147, 165);
+        left: 100px;
+        top: 100px;
+        z-index: 1;
+      }
+      body > div {
+        width: 210px;
+        height: 210px;
+        border: 3px solid pink;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>absolute Test</h1>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <h1>absolute Test</h1>
+  </body>
+</html>
+
+<!--
+    상위요소를 기준으로 절대 위치를 잡는 absolute를 적용하려면
+    상위요소 position속성에 relation속성값을 넣는다
+-->
