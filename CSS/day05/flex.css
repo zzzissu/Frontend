@@ -1,0 +1,56 @@
+.container {
+  background: #ffdad4;
+  height: 100vh;
+
+  /* 컨테이너 박스를 flex box 만들기 
+    첫번째 display 속성에 flex 속성값을 적용
+    두번째 flex-direction 속성에 기준축을 적용
+  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+/* body,
+html {
+  /* background: #ffcdc4; 
+  height: 100%;
+} */
+.item {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+}
+
+.item1 {
+  background-color: #ffcdc4;
+}
+.item2 {
+  background-color: #fdbdb2;
+}
+.item3 {
+  background-color: #ffa595;
+}
+.item4 {
+  background-color: #ff8a75;
+}
+.item5 {
+  background-color: #ff7158;
+}
+
+/* 
+    flex-direction: 기준축을 정의 
+    (row - 가로축을 기준으로 설정 / row-reverse - 1이 맨 뒤에서부터 가로 정렬 / 
+    column - 세로 축을 기준으로 설정 / column-reverse - 1이 맨 밑에서부터 세로 정렬) 
+
+    height: 100vh - 
+    body,html { background: #ffcdc4; height: 100%; } body에 100%를 사용하려면 부모인 html도 같이 써주어야 함.
+    이렇게 하면 보기 좋지 않기 때문에 100vh를 사용. vh는 부모의 크기에 따라 변동됨
+
+    justify-content: 중심축에서 아이템의 배치를 담당 
+    flex-start, flex-end, center, space-around(창의 양옆까지 띄움), space-between(창의 양 옆 공간 없이 띄움)
+
+    align-items: 반대축에서 아이템 배치하는 속성
+*/

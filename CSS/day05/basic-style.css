@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.color1 {
+  background-color: #eebfbf;
+}
+.color2 {
+  background-color: #f3efbd;
+}
+.color3 {
+  background-color: #aee9ae;
+}
+.color4 {
+  background-color: #bfcae9;
+}
+.color5 {
+  background-color: #d8b9eb;
+}
+
+/* 
+box-sizing은 요소의 전체 너비와 높이를 어떻게 계산하는지를 설정
+border-box, content-box
+ */

@@ -1,0 +1,14 @@
+.level1 {
+  font-size: 32px;
+}
+.level2 {
+  font-size: 32px;
+}
+.level3 {
+  font-size: 32px;
+}
+.level4 {
+  font-size: 32px;
+}
+
+/* px는 반응형에서 잘 사용하지 않음 */

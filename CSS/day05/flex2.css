@@ -1,0 +1,39 @@
+* {
+  text-align: center;
+}
+.container {
+  padding-top: 100px;
+  background: rgb(255, 225, 235);
+  height: 100vh;
+  display: flex;
+}
+
+.item {
+  width: 55px;
+  height: 55px;
+  border: 1px solid red;
+}
+
+.item1 {
+  background-color: rgb(241, 191, 241);
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* flex-basis: 60%; */
+  /* flex: 2 2 auto; */
+  align-self: center;
+}
+.item2 {
+  background-color: rgb(192, 223, 240);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.item3 {
+  background-color: rgb(218, 240, 189);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* 
+flex-grow: 비례하여 늘어남
+flex-shrink: 비례하여 줄어들음
+*/
