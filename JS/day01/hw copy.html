@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+    <script defer src="main.js"></script>
+    <h2>현재 나이 구하기</h2>
+</head>
+<body>
+    <div id="input"></div>
+    <script>
+        let outputElement = document.getElementById("input");
+        let birth = prompt("태어난 년을 입력하세여(YYYY)")
+        let year = new Date().getFullYear();
+        let result = year - birth;
+
+        outputElement.innerHTML = `${year}년 현재` + `<br>` +  `${birth}에 태어난 사람의 나이는 ${result}입니다`;
+    </script>
+</body>
+</html>

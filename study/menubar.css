@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.menu {
+  width: 800px;
+  overflow: hidden;
+  margin: 0px 50px;
+}
+
+.menu > li {
+  font-weight: 550;
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgb(255, 171, 185);
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #acbdff;
+  font-weight: normal;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #acbdff;
+  transition-duration: 1s;
+}
+
+.menu > li:hover .submenu {
+  height: 150px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+
+/* .menu {
+  width: 300px;
+  overflow: hidden;             // 세로로 정렬하기
+  margin: 150px auto;
+}
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;
+} */

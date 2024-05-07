@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS</title>
+    <style>
+      .jb {
+        width: 300px;
+        height: 300px;
+        margin: 60px auto;
+        background-color: pink;
+        transition: all ease 1s;
+      }
+      .jb:hover {
+        transform: rotate(360deg) scale(0.3); /* deg가 음수이면 반시계 방향으로 회전 */
+        /* scale(0.3) 도형 확대하기 */
+        /* rotateX() x축으로 뒤집기 / rotateY() y축으로 뒤집기 */
+        /* translate(50px, 50%) 오른쪽으로 50px, 아래쪽으로 50% 이동 */
+        /* transform: skewX( 30deg, 60deg ); 가로 방향으로 30도, 세로 방향으로 60도 비틀기 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jb"></div>
+  </body>
+</html>

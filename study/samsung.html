@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성카드 다이렉트 오토</title>
+</head>
+<body>
+    <header id="header" class="header on">
+        <div class="header_wrap">
+            <h1 class="logo">
+            
+                
+                
+                <a href="/oap/common/UOAPCO0301M1.jsp"><img src="//static32.samsungcard.com/images/oap/desktop/logo.png" alt="삼성카드 다이렉트 오토"></a>
+                
+            
+            </h1>
+            
+            
+            <div class="login_sec">
+                
+                    
+                    
+                        <a href="javascript:lgUtil.logInSrcCall('01');">로그인</a>
+                    
+                    
+                    
+                    <a href="/oap/join/UOAPMJ0101M0.jsp">회원가입</a>
+                    
+                
+    
+                <div class="time_wrap">
+                    
+                </div>
+                
+                
+                
+                <div class="only_desktop">
+                    <a href="/oap/car-search/UOAPCS0201M1.jsp">차량견적</a>
+                    <a href="/oap/center/UOAPCC0901M0.jsp">이벤트</a>
+                    <a href="/oap/center/UOAPCC2001M0.jsp">고객센터</a>
+                </div>
+            </div>
+            
+    
+            
+            <!-- 2017re: 삼성카드 링크 -->
+            <a href="https://www.samsungcard.com/" class="link_to_card" target="_blank" title="새창으로 이동">삼성카드 홈페이지</a>
+            
+    
+            
+            <nav id="gnb" class="gnb">
+                <ul role="menu">
+                    <li><a href="/oap/product/UOAPFP0101M0.jsp?click=da_gnb_info" role="menuitem">상품안내</a></li>
+                    <li><a href="/oap/card-installment/UOAPNC0101M0.jsp?click=da_gnb_cardinst" role="menuitem">신차할부</a></li>
+                    <li><a href="/oap/product/UOAPFP0102M0.jsp?click=da_gnb_cash" role="menuitem">신차일시불</a></li>
+                    <li><a href="/oap/usedcar/UOAPUC0101M0.jsp?click=da_gnb_usedcar&amp;seaOptC=ISTM" role="menuitem">중고차할부</a></li>
+                    <li><a href="/oap/usedcar/UOAPUC0103M0.jsp?click=da_gnb_usedcar" role="menuitem">중고차일시불</a></li> 
+                </ul>
+                <span id="gnb_line" class="gnb_line" style="opacity: 0; width: 80px; transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;"></span>
+            </nav>
+            
+        </div>
+    </header>
+    <section id="contents" class="contents_main ux17 kux" style="padding-top: 0px;"><!-- 신규 pc 메인은 "ux17 kux" 클래스 추가함 ontouchstart-->
+			
+        <script type="text/javascript">
+        var pcMainonly = {//pc Only
+        init: function(){
+        document.getElementsByTagName('html')[0].classList.add('desktop');//fast addClass "desktop"
+        }
+        }//end
+        pcMainonly.init();
+        document.getElementsByTagName('html')[0].classList.add('renew');//faste addClass "renew"
+        $(window).on('scroll',function(){	//20221130 차세대 UX 스크롤
+        var fstoffset = $(this).scrollTop();
+        if(fstoffset > 10){
+        $("#header").addClass("scrolled");
+        }else{
+        $("#header").removeClass("scrolled");
+        }
+        });
+        </script>
+        <style>
+        .contents_main.kux {min-height:700px; background:#fff; border-top:154px solid red !important; color:#666;}
+        .contents_main.kux .main-wrap{width:1224px; margin:0 auto;}
+        .contents_main.kux .main-wrap:after{display:block; content:''; clear:both;}
+        .contents_main.kux h2{font-size:16px; color:#111; font-weight:bold;}
+        .contents_main.kux .main-wrap.hero_section{margin-top:50px;}
+        @media screen and (max-width:1280px) {/*메인전용 데스크탑 딤처리*/
+        html.dimmode .wrap.kux, html.dimmode .header, html.dimmode .kux .btn_ux15_stepbox {width: calc(100%); max-width: calc(100%);}
+        html.desktop.dimmode .header_wrap{margin-left: -648.5px;}
+        }
+        </style>
+        <div class="main-wrap slide hero_section">
+        
+        <style>
+        .main_hero_section{width:808px; float:left;}
+        .main_hero_section .swiper-container{border-radius:12px; overflow:hidden; height:462px;}
+        .main_hero_section .swiper-container .swiper-wrapper{}
+        .main_hero_section .swiper-container .swiper-slide{}
+        .main_hero_section .swiper-container .swiper-slide .bg{display:block; background-repeat:no-repeat; background-size:cover; width:100%; height:462px; background-position: 0 65%;}
+        .main_hero_section .swiper-container .swiper-slide .bnr_copy{position:absolute; top:10px; left:20px;}
+        .main_hero_section .swiper-container .swiper-slide .bnr_txt{position:absolute; top:58px; left:53px;}
+        .main_hero_section .swiper-container .swiper-slide .bnr_txt .tit{color:#fff; font-size:36px; font-weight:bold; line-height:48px;}
+        .main_hero_section .swiper-container .swiper-slide .bnr_txt .txt{color:#fff; font-size:16px; line-height:20px; margin-top:8px;}
+        .main_hero_section .swiper-container .slot-pagenumber{display:block; position:absolute; /*width: calc(100% - 20px);*/ bottom:48px; left:54px; height:32px; border-radius:16px; z-index:1; background:rgba(0,0,0,0.25);}
+        .main_hero_section .swiper-container .slot-pagenumbe:after{display:block; content:''; clear:both;}
+        .main_hero_section .swiper-container .slot-pagenumber .swiper-pagination-bullet{width:6px; height:6px; border-radius:3px; margin:0 3px; background:#dcdcdc; opacity:1.0; display:block; float:left;}
+        .main_hero_section .swiper-container .slot-pagenumber .swiper-pagination-bullet.swiper-pagination-bullet-active{width:16px; background:#fff;}
+        .main_hero_section .swiper-container .slot-pagenumber .swiper-pagination{position:relative; display:block; padding-left:13px; text-align:left; float:left; margin:13px 0 0 0;}
+        .main_hero_section .swiper-container .slot-pagenumber .auto_play{display:block; float:left;  margin:13px 0 0 3px;}
+        .main_hero_section .swiper-container .slot-pagenumber .auto_play.play{width:12px; height:0;
+        border-top:3px solid rgba(0,0,0,0); border-bottom:3px solid rgba(0,0,0,0); border-left:5px solid #fff; text-indent:-99999px; opacity:1.0;}
+        .main_hero_section .swiper-container .slot-pagenumber .auto_play.stop{width:12px; height:6px; border-color:#dcdcdc; border-style:double; border-width:0 0 0 6px;  text-indent:-99999px; opacity:1.0;}
+        .main_hero_section .swiper-container .slot-pagenumber .ev_more{color:#fff; display:block; float:right; font-size:12px; margin:8px 16px 0 10px;}
+        </style>
+        <div class="main_hero_section">
+        <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="main_hero">
+        <h2 class="hide">이벤트 모음</h2>
+        <ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-5656px, 0px, 0px);"><li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="5" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=179&amp;click=da_main_hero_kcar_event">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v6.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">중고차 찾고 있다면<br>K Car로 오세요</p>
+        <p class="txt">삼성카드로 구매하면<br>0.9% 캐시백</p>
+        </span>
+        </a>
+        </li><li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="6" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/common/UOAPCO0120M0.jsp?click=da_main_hero_mktprice">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230717_v7.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">K car로 내 차 팔면<br><em class="ef-txt" data-val="12">12</em>만 포인트</p>
+        <p class="txt">내차팔기 홈서비스로<br> 편하게 팔고 혜택 받으세요.</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide" data-swiper-slide-index="0" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/card-installment/UOAPNC0101M0.jsp?click=da_main_hero_rate_cardinst">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v1.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">60개월 연 <em class="ef-txt  dot counted" data-val="5.4">5.4</em>%!<br>새 차 살 땐 카드로</p>
+        <p class="txt">선수금 1.0% 캐시백에<br>언제 상환해도 수수료 0원</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide" data-swiper-slide-index="1" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/product/UOAPFP0102M0.jsp?click=da_main_hero_cash">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v2.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">일시불로 새 차 사면<br> <em class="ef-txt  dot counted" data-val="1.0">1.0</em>% 캐시백</p>
+        <p class="txt">캐시백 프로모션<br>지금 바로 신청하세요</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide" data-swiper-slide-index="2" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/usedcar/UOAPUC0101M1.jsp?click=da_main_hero_usedcar_product">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v3.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">중고차 살 때도 할부로!<br>선수금 캐시백도 ~</p>
+        <p class="txt">최대 60개월 나눠내고<br>선수금 캐시백!</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide" data-swiper-slide-index="3" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=160&amp;click=da_main_hero_tesla_event">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v4.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">Tesla 살 때도<br>다이렉트 오토</p>
+        <p class="txt">중도상환수수료 0원<br>최대 60개월로 나눠보세요~</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide swiper-slide-prev" data-swiper-slide-index="4" aria-hidden="true" style="width: 808px;">
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=97&amp;click=da_main_hero_benefit_noti">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v5.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">2달 뒤에 새 차 사면<br>최대 <em class="ef-txt counted" data-val="15">15</em>만원 캐시백!</p>
+        <p class="txt">새 차 구매 계획이라면,<br>캐시백 미리 찜하세요</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide swiper-slide-active" data-swiper-slide-index="5" aria-hidden="false" style="width: 808px;">
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=179&amp;click=da_main_hero_kcar_event">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v6.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">중고차 찾고 있다면<br>K Car로 오세요</p>
+        <p class="txt">삼성카드로 구매하면<br>0.9% 캐시백</p>
+        </span>
+        </a>
+        </li>
+        <li class="swiper-slide swiper-slide-next" data-swiper-slide-index="6" aria-hidden="true" style="width: 808px;">
+        <a href="/oap/common/UOAPCO0120M0.jsp?click=da_main_hero_mktprice">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230717_v7.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">K car로 내 차 팔면<br><em class="ef-txt counted" data-val="12">12</em>만 포인트</p>
+        <p class="txt">내차팔기 홈서비스로<br> 편하게 팔고 혜택 받으세요.</p>
+        </span>
+        </a>
+        </li>
+        
+        <li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/card-installment/UOAPNC0101M0.jsp?click=da_main_hero_rate_cardinst">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v1.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">60개월 연 <em class="ef-txt  dot counted" data-val="5.4">5.4</em>%!<br>새 차 살 땐 카드로</p>
+        <p class="txt">선수금 1.0% 캐시백에<br>언제 상환해도 수수료 0원</p>
+        </span>
+        </a>
+        </li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" aria-hidden="true" style="width: 808px; visibility: hidden;">
+        <a href="/oap/product/UOAPFP0102M0.jsp?click=da_main_hero_cash">
+        <span class="bg" style="background-image:url(//static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v2.png);"></span>
+        <span class="bnr_txt">
+        <p class="tit">일시불로 새 차 사면<br> <em class="ef-txt  dot" data-val="1.0">1.0</em>% 캐시백</p>
+        <p class="txt">캐시백 프로모션<br>지금 바로 신청하세요</p>
+        </span>
+        </a>
+        </li></ul>
+        <div class="slot-pagenumber">
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span></div>
+        <button type="button" class="auto_play stop">정지</button>
+        <a href="/oap/center/UOAPCC0901M0.jsp?click=da_main_evtlist" class="ev_more">전체 이벤트보기</a>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+        <script>
+        //##### 메인 슬라이더 #####//
+        $(document).ready(function(){
+        $.fn.countNumNew = function(num){
+        this.each(function() {
+        var $this = $(this),
+        $this_value = $this.text().replace(/[^0-9]/g,'');
+        $this.text('0');
+        setTimeout(function(){
+        $this.stop().prop('Counter',0).animate({
+        Counter: $this_value
+        },
+        {duration: 900, easing: 'swing',
+        step: function(now) {
+        if( $this.hasClass('dot') ){
+        $this.text(dot(Math.ceil(now)));
+        }else if( $this.hasClass('dot2') ){
+        $this.text("0."+dot2(Math.ceil(now)).replace(".","")); //20220901 소숫점 1개 지움
+        }else{
+        $this.text(comma(Math.ceil(now)));
+        }
+        },complete: function(){//20220901 완료시 소수점 마지막 처리
+        if( $this.hasClass('dot2') ){
+        $this.text(Number(($this_value) * 0.1).toFixed(1) );
+        }
+        }
+        });
+        $this.addClass('counted');
+        },0);
+        })
+        }
+        function comma(n) {//콤마 찍기
+        return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        function dot(n) {//퍼센트 점 찍기
+        return n.toString().replace(/\B(?=(\d{1})+(?!\d))/g, ".");
+        }
+        function dot2(n) {//퍼센트 점 찍기
+        return n.toString().replace(/\B(?=(\d{1})+(?!\d))/g, ".");
+        }
+        var mainHeroSet = ['main_hero', 800, 5000], //set(only one): className, speed, autoDelay 4000
+        mainHeroClass = mainHeroSet[0],
+        mainHeroEl = '#'+mainHeroClass;
+        var main_hero_slider = new Swiper(mainHeroEl, {
+        slidesPerView: 1,
+        loopAdditionalSlides: 1, //loop시 보이는 슬라이드를 하나 더 만듬
+        pagination:{
+        el: '.swiper-pagination',
+        clickable:true
+        },
+        autoplay: {delay: mainHeroSet[2], disableOnInteraction:true},
+        speed: mainHeroSet[1],
+        loop:true,
+        on: {//on
+        init: function(){//init
+        $(mainHeroEl+' .swiper-slide').attr("aria-hidden",true).css('visibility', 'hidden'); //20201030 웹접근성 처리
+        $(mainHeroEl+' .swiper-slide').data("swiper-slide-index", 0).css('visibility', ''); //20201030 웹접근성 처리
+        $(mainHeroEl).find('.auto_play').on('click', function() {//auto play
+        if($(this).hasClass("stop")){
+        $(this).removeClass("stop");
+        $(this).addClass("play");
+        main_hero_slider.autoplay.stop();
+        }else{
+        $(this).removeClass("play");
+        $(this).addClass("stop")
+        main_hero_slider.autoplay.start();;
+        }
+        });
+        },//init - end
+        transitionStart: function(){//움직임 시작시
+        var slIndex = $(' .swiper-pagination-bullet.swiper-pagination-bullet-active').index() + 1;
+        $(mainHeroEl+' .swiper-slide').attr("aria-hidden",true).css('visibility', 'hidden'); //20201030 웹접근성 처리
+        $(mainHeroEl+' .swiper-slide-active').attr("aria-hidden",false).css('visibility', ''); //20201030 웹접근성 처리
+        $(mainHeroEl+' .swiper-slide-prev').css('visibility', ''); //20201030 웹접근성 처리
+        $(mainHeroEl+' .swiper-slide-next').css('visibility', ''); //20201030 웹접근성 처리
+        /* 금액 에니메이션 */
+        var txtLength = $(mainHeroEl+' .swiper-slide-active').find(".ef-txt").length;
+        for(i=0; i < txtLength; i++){
+        var priceValue = $(mainHeroEl+' .swiper-slide-active').find(".ef-txt").eq(i).attr("data-val");
+        $(mainHeroEl+' .swiper-slide-active').find(".ef-txt").eq(i).text(priceValue);
+        $(mainHeroEl+' .swiper-slide-active').find(".ef-txt").eq(i).countNumNew(priceValue);//금액 애니메이션 실행
+        }
+        /* 금액 에니메이션.end */
+        }//움직임 시작시 - end
+        }//on - end
+        });
+        });
+        //##### 메인 슬라이더 #####//
+        </script>
+        
+        
+        <style>
+        .hero_right_section {width:392px; float:right;}
+        .hero_right_section .bnr-benfit {padding: 32px 0px 0px 24px; position: relative; display:block;}
+        .bnr-benfit{padding:24px 16px; position:relative;}
+        .bnr-benfit ul{display: flex; justify-content: space-between; align-items: flex-start;}
+        .bnr-benfit li span{display:block; color:#666; line-height:20px;}
+        .bnr-benfit li .impo{display: block; font-size: 24px; font-weight: bold; color: #111;  line-height:1.2; padding-top:3px;}
+        .bnr-benfit .pic{width:160px; display:block; float:right; margin-top:-32px;}
+        </style>
+        <div class="hero_right_section">
+        <ul>
+        <li>
+        
+        <style>
+        .bnr-benfit.monimo {background:#f6d9ce;}
+        .bnr-benfit.monimo .pic{border-radius: 0 12px 12px 0;}
+        </style>
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=160&amp;click=da_main_event_tesla" class="rdbox bnr-benfit monimo" target="_blank">
+        <ul>
+        <li>
+        <span><i class="maker blue">혜택</i></span>
+        <span class="impo space-7">Tesla 사기 전<br>필수 코스는 여기</span>
+        <span class="space-8">금리할인도 캐시백도<br>여기 다 있어요~</span>
+        </li>
+        <li class="pic-li"><img src="//static31.samsungcard.com/wcms/oap/images/work/pic_right_tesla_160x219.png" alt="" class="pic"></li>
+        </ul>
+        </a>
+        </li>
+        <li>
+        
+        <style>
+        .bnr-benfit.cashback {background:#e7e4ff; margin-top:24px;}
+        </style>
+        <a href="https://www.samsungcard.com/personal/card/simple-apply/UHPPCA0224M0.jsp?alncmpC=QHDAAPP5&amp;affcode=QHDAHOME&amp;fastIsCardYn=Y&amp;click=da_main_cardapply_middle_banner" class="rdbox bnr-benfit cashback" target="_blank">
+        <ul>
+        <li>
+        <span><i class="maker blue">혜택</i></span>
+        <span class="impo space-7">온라인 신규발급<br>캐시백 혜택</span>
+        <span class="space-8">내게 맞는 카드찾고<br> 혜택 받기</span>
+        </li>
+        <li class="pic-li"><img src="//static31.samsungcard.com/wcms/oap/images/work/pic_hero_right_160x219_sample_v2.png" alt="" class="pic"></li>
+        </ul>
+        </a>
+        
+        </li>
+        </ul>
+        </div>
+        
+        </div>
+        <style>
+        .kux .main-wrap.car-maker .carMaker{border: 1px solid #e2e5eb; border-radius: 12px; padding: 28px 24px 32px 24px;}
+        .kux .carMaker .brand-slide-area{margin-top:34px; height:137px; overflow:hidden; position:relative;}
+        .kux .carMaker .swiper-container{ width:/*964px*/ 980px; margin:0 auto;}
+        .kux .carMaker .swiper-wrapper.col-maker{flex-wrap: nowrap; height:137px; opacity:0;}
+        .kux .carMaker .form-group.col-maker .option-type2,
+        .kux .carMaker .form-group.col-maker >.option-type2:first-child, .kux .form-group.col-maker >.option-type2:nth-child(4n+1) {margin: 0px; flex-shrink:0; width:/*calc(25% - 9px)*/ 14.285714%; padding:0 8px; box-sizing:border-box;}
+        .kux .carMaker .form-group .option-type2 .option-label{height:137px; padding:24px 16px 16px 16px;}
+        .kux .carMaker .form-group.col-maker .option-type2 .option-label span{margin:26px -5px 0 -5px;}
+        .kux .carMaker .form-group.col-maker .option-type2 .option-label img{height:56px;}
+        .kux .carMaker .swiper-navigation{display:block; position:absolute; top:50%; width:33px; height:33px; margin:-16px 0 0 0; font-size:0; line-height:0; text-indent:-9999px;
+        background:url(//static31.samsungcard.com/wcms/oap/images/work/icn_my_swiper_prev.png) no-repeat 0 0; background-size: 33px auto; cursor:pointer;}
+        .kux .carMaker .swiper-brand-prev{left:40px; }
+        .kux .carMaker .swiper-brand-next{right:40px; transform:rotate(-180deg);}
+        .kux .carMaker .btn-inline{display:block; width:206px; margin:0 auto;}
+        /*#제조사 스켈레톤 UI */
+        .brand-slide-area .skel{display:block; content:''; position:absolute; top:-12px; left:105px; right:-80px; z-index:20; text-indent:-9999px;}
+        .brand-slide-area .skel span{display:block; box-sizing:border-box; float:left; width:124px; height:137px; margin:12px 16px 0 0; /*border:1px solid #e2e5eb;*/ border-radius: 0.5rem;
+        background:#f0f0f0; /*background:rgba(255,255,0,0.3);*/ }
+        </style>
+        
+                    
+                    <!--######### 차량견적: dev(신규) #########-->
+                    <div class="main-wrap slide car-maker space-2">
+                        <div class="carMaker">
+                            <h2>내가 사고 싶은 차, 한도는?</h2>
+                            <div class="brand-slide-area">
+                                <div class="swiper-container swiper-container-initialized swiper-container-horizontal" role="checkboxgroup" id="carBrand">
+                                    <div id="carMncoList" class="swiper-wrapper form-group col-maker" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><div class="swiper-slide option-type2 swiper-slide-active" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco0" title="현대" value="303" class="option-ipt">    <label for="mnco0" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/303.png" alt="현대">     <span>현대</span>     </label>   </span></div><div class="swiper-slide option-type2 swiper-slide-next" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco1" title="기아" value="307" class="option-ipt">    <label for="mnco1" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/307.png" alt="기아">     <span>기아</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco2" title="쉐보레" value="312" class="option-ipt">    <label for="mnco2" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/312.png" alt="쉐보레">     <span>쉐보레</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco3" title="KGM" value="326" class="option-ipt">    <label for="mnco3" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/326.png" alt="KGM">     <span>KGM</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco4" title="르노코리아" value="321" class="option-ipt">    <label for="mnco4" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/321.png" alt="르노코리아">     <span>르노코리아</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco5" title="BMW" value="362" class="option-ipt">    <label for="mnco5" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/362.png" alt="BMW">     <span>BMW</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco6" title="벤츠" value="349" class="option-ipt">    <label for="mnco6" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/349.png" alt="벤츠">     <span>벤츠</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco7" title="아우디" value="371" class="option-ipt">    <label for="mnco7" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/371.png" alt="아우디">     <span>아우디</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco8" title="폭스바겐" value="376" class="option-ipt">    <label for="mnco8" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/376.png" alt="폭스바겐">     <span>폭스바겐</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco9" title="미니" value="367" class="option-ipt">    <label for="mnco9" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/367.png" alt="미니">     <span>미니</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco10" title="토요타" value="491" class="option-ipt">    <label for="mnco10" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/491.png" alt="토요타">     <span>토요타</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco11" title="렉서스" value="486" class="option-ipt">    <label for="mnco11" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/486.png" alt="렉서스">     <span>렉서스</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco12" title="혼다" value="500" class="option-ipt">    <label for="mnco12" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/500.png" alt="혼다">     <span>혼다</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco13" title="포드" value="569" class="option-ipt">    <label for="mnco13" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/569.png" alt="포드">     <span>포드</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco14" title="링컨" value="573" class="option-ipt">    <label for="mnco14" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/573.png" alt="링컨">     <span>링컨</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco15" title="지프" value="587" class="option-ipt">    <label for="mnco15" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/587.png" alt="지프">     <span>지프</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco16" title="캐딜락" value="546" class="option-ipt">    <label for="mnco16" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/546.png" alt="캐딜락">     <span>캐딜락</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco17" title="재규어" value="394" class="option-ipt">    <label for="mnco17" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/394.png" alt="재규어">     <span>재규어</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco18" title="랜드로버" value="399" class="option-ipt">    <label for="mnco18" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/399.png" alt="랜드로버">     <span>랜드로버</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco19" title="볼보" value="459" class="option-ipt">    <label for="mnco19" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/459.png" alt="볼보">     <span>볼보</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco20" title="푸조" value="413" class="option-ipt">    <label for="mnco20" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/413.png" alt="푸조">     <span>푸조</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco21" title="시트로엥" value="422" class="option-ipt">    <label for="mnco21" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/422.png" alt="시트로엥">     <span>시트로엥</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco22" title="DS" value="618" class="option-ipt">    <label for="mnco22" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/618.png" alt="DS">     <span>DS</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco23" title="포르쉐" value="381" class="option-ipt">    <label for="mnco23" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/381.png" alt="포르쉐">     <span>포르쉐</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco24" title="페라리" value="436" class="option-ipt">    <label for="mnco24" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/436.png" alt="페라리">     <span>페라리</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco25" title="람보르기니" value="440" class="option-ipt">    <label for="mnco25" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/440.png" alt="람보르기니">     <span>람보르기니</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco26" title="마세라티" value="445" class="option-ipt">    <label for="mnco26" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/445.png" alt="마세라티">     <span>마세라티</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco27" title="애스턴마틴" value="404" class="option-ipt">    <label for="mnco27" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/404.png" alt="애스턴마틴">     <span>애스턴마틴</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco28" title="로터스" value="408" class="option-ipt">    <label for="mnco28" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/408.png" alt="로터스">     <span>로터스</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco29" title="맥라렌" value="409" class="option-ipt">    <label for="mnco29" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/409.png" alt="맥라렌">     <span>맥라렌</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco30" title="롤스로이스" value="385" class="option-ipt">    <label for="mnco30" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/385.png" alt="롤스로이스">     <span>롤스로이스</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco31" title="벤틀리" value="390" class="option-ipt">    <label for="mnco31" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/390.png" alt="벤틀리">     <span>벤틀리</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco32" title="코닉세그" value="468" class="option-ipt">    <label for="mnco32" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/468.png" alt="코닉세그">     <span>코닉세그</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco33" title="폴스타" value="458" class="option-ipt">    <label for="mnco33" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/458.png" alt="폴스타">     <span>폴스타</span>     </label>   </span></div><div class="swiper-slide option-type2" style="width: 140px;"><span class="rd">    <input type="radio" name="mnco_group" id="mnco34" title="테슬라" value="611" class="option-ipt">    <label for="mnco34" role="radio" class="option-label label_radio mnco_group">     <img src="/imageqc/LK_0x0/date/20240506/danawa/brand/611.png" alt="테슬라">     <span>테슬라</span>     </label>   </span></div></div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                <a hraf="javascript:void(0);" class="swiper-brand-prev swiper-navigation swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true">이전 제조사</a>
+                                <a hraf="javascript:void(0);" class="swiper-brand-next swiper-navigation" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false">다음 제조사</a>	
+                            <div class="skel" style="display: none;"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><div class="skel" style="display: none;"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>		<span>6</span><span>7</span></div></div>
+                            <div class="page-btn-area space-3 main">
+                                <a href="javascript:;" class="btn-inline orng ui_srch_main" id="brand-select">조회</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!--######### (kux)카드신청 / 신차 / 중고차 중단(PC): WCMS (UOAPCO0301M1_04.html) #########-->
+                    
+        <div class="main-wrap">
+        
+        <style>
+        .kux .bnr-page .pic .icn{display:block; width:36px; height:36px; background:url("//static31.samsungcard.com/wcms/oap/images/work/ico_mainsrv_576x_v1.png"); background-size:288px auto;}
+        .kux .bnr-page.sdcard .pic .icn{display:block; width:70px; height:70px; background:url("//static31.samsungcard.com/wcms/oap/images/work/ico_card_70x.png");}
+        .kux .bnr-page.sdcard{background:#e3f3ff; padding:0; justify-content: center; border:none; margin-top:47px; height:62px;}
+        .kux .bnr-page.sdcard .pic{margin: -34px 0 0 10px;}
+        .kux .bnr-page.sdcard a{width:100%; justify-content: center;  padding:17px 29px 0px 0px; font-size:20px; font-weight:bold; box-sizing:border-box; align-items:flex-start;}
+        </style>
+        <div class="unit-wrap">
+        <div class="bnr-page sdcard">
+        <a href="https://www.samsungcard.com/personal/card/simple-apply/UHPPCA0224M0.jsp?alncmpC=QHDAAPP5&amp;affcode=QHDAHOME&amp;fastIsCardYn=Y&amp;click=da_main_cardapply_top_banner" target="_blank">
+        혹시 삼성카드가 없으신가요?
+        <span class="pic"><i class="icn"></i></span>
+        </a>
+        </div>
+        </div>
+        
+        
+        <div class="unit-wrap newcar">
+        
+        <h2>신차</h2>
+        <div class="newcar-list">
+        <style>
+        .kux .unit-wrap.newcar{width:600px; float:left;}
+        .kux .unit-wrap.usedcar{width:600px; float:right;}
+        .kux .unit-wrap.newcar h2,
+        .kux .unit-wrap.usedcar h2{display:block; padding:29px 0 17px 0;}
+        .kux .unit-wrap .newcar-list{ padding:0px 24px;  border:1px solid #e2e5eb; box-sizing:border-box; border-radius:12px;}
+        .kux .unit-wrap .usedcar-list { padding:0px 24px;  border:1px solid #e2e5eb;  box-sizing:border-box; border-radius:12px;}
+        .kux .newcar .bnr-page,
+        .kux .usedcar .bnr-page{display:flex; background:#fff; padding:24px 0; border-top:1px solid #e2e5eb; border-radius:0;}
+        .kux .newcar .bnr-page.fst,
+        .kux .usedcar .bnr-page.fst{border-top:0;}
+        .kux .newcar .bnr-page:after,
+        .kux .usedcar .bnr-page:after{display:block; content:''; position:absolute; top:21px; right:-6px; width:20px; height:20px;
+        background: url("//static31.samsungcard.com/wcms/oap/images/work/ico_kux_arrow.svg") no-repeat 0 0; transform:rotate(-90deg);}
+        .bnr-page .txt-box{margin-top:-2px;}
+        .bnr-page .txt-box .tit{font-size:16px; font-weight:bold; color:#111;}
+        .bnr-page .txt-box ul{display:block; font-size:14px;  color:#666; margin-top:4px;}
+        .bnr-page .txt-box ul:after{display:block; content:''; clear:both;}
+        .bnr-page .txt-box li{display:block; float:left; position:relative; padding:0 8px;}
+        .bnr-page .txt-box li:after{display:block; position:absolute; content:''; clear:both; width:1px; height:12px;  top:50%; margin-top:-6px; left:0;  background:#e2e5eb; }
+        .bnr-page .txt-box li:first-child{padding-left:0;}
+        .bnr-page .txt-box li:first-child:after{display:none;}
+        .bnr-page.newcar .pic .icn.icn01 {background-position:-36px 0;}
+        .bnr-page.newcar .pic .icn.icn02 {background-position:-72px 0;}
+        .bnr-page.newcar .pic .icn.icn03 {background-position:-108px 0;}
+        .bnr-page.newcar .pic .icn.icn04 {background-position:-142px 0;}
+        </style>
+        
+        <a href="/oap/card-installment/UOAPNC0101M0.jsp?click=da_main_product_cardinst" class="bnr-page newcar fst">
+        <span class="pic"><i class="icn icn01"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토 카드할부</p>
+        <ul>
+        <li>연 <strong><em class="cardInstEleRate0">5.0</em>%</strong>~<strong><em class="cardInstNorRate6">5.4</em>%</strong></li>
+        <li>중도상환 수수료 <strong>0원</strong></li>
+        </ul>
+        </span>
+        </a>
+        
+        
+        <a href="/oap/product/UOAPFP0103M0.jsp?click=da_main_product_autoinst" class="bnr-page newcar">
+        <span class="pic"><i class="icn icn02"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토 할부</p>
+        <ul>
+        <li>연 <strong><em class="autoInstEleRate0">5.0</em>%</strong>~<strong><em class="autoInstNorRate6">5.4</em>%</strong></li>
+        <li>최대 <strong>1억원</strong>까지 한도</li>
+        </ul>
+        </span>
+        </a>
+        
+        
+        <a href="/oap/product/UOAPFP0102M0.jsp?click=da_main_product_newcarcashback" class="bnr-page newcar">
+        <span class="pic"><i class="icn icn03"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토 카드일시불</p>
+        <ul>
+        <li>삼성카드로 결제하면 최대 <strong><em class="autoInstRateHigh">1.0</em>% 캐시백</strong></li>
+        </ul>
+        </span>
+        </a>
+        
+        
+        <a href="/oap/product/UOAPFP0106M0.jsp?click=da_main_product_autoloan" class="bnr-page newcar">
+        <span class="pic"><i class="icn icn04"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토론</p>
+        <ul>
+        <li>카드결제가 안 될때 최대 <strong>1억원</strong>까지</li>
+        </ul>
+        </span>
+        </a>
+        
+        </div>
+        
+        </div>
+        
+        
+        <div class="unit-wrap usedcar">
+        
+        <h2>중고차</h2>
+        <div class="usedcar-list">
+        <style>
+        .bnr-page.usedcar .pic .icn.icn01 {background-position:-178px 0;}
+        .bnr-page.usedcar .pic .icn.icn02 {background-position:-214px 0;}
+        .bnr-page.usedcar .pic .icn.icn03 {background-position:-250px 0;}
+        </style>
+        
+        <div class="bnr-page bnr-card usedcar fst">
+        <a href="/oap/usedcar/UOAPUC0101M0.jsp?click=da_main_product_usedcarloan">
+        <span class="pic"><i class="icn icn01"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토 중고차론</p>
+        <ul>
+        <li>카드결제가 안 될때 최대 <strong>5천만원</strong>까지</li>
+        </ul>
+        </span>
+        </a>
+        </div>
+        
+        
+        <div class="bnr-page bnr-card usedcar">
+        <a href="/oap/usedcar/UOAPUC0101M1.jsp?click=da_main_product_usedcarinst">
+        <span class="pic"><i class="icn icn02"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토 중고차할부</p>
+        <ul>
+        <li>할부로 결제하고 선수금 <strong><em class="usedCashRateHigh">0.9</em>% 캐시백</strong> 혜택까지</li>
+        </ul>
+        </span>
+        </a>
+        </div>
+        
+        
+        <div class="bnr-page bnr-card usedcar">
+        <a href="/oap/usedcar/UOAPUC0103M0.jsp?click=da_main_product_usedcarcachback">
+        <span class="pic"><i class="icn icn03"></i></span>
+        <span class="txt-box">
+        <p class="tit">다이렉트 오토 중고차일시불</p>
+        <ul>
+        <li>삼성카드로 결제하면 <strong><em class="usedCashRateHigh">0.9</em>% 캐시백</strong></li>
+        </ul>
+        </span>
+        </a>
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        
+                    <!--#########// (kux)카드신청 / 신차 / 중고차 중단(PC): WCMS (UOAPCO0301M1_04.html) #########-->
+                    
+                    <!--######### (kux)진행 이벤트 / 제휴 이벤트  하단(PC): WCMS (UOAPCO0301M1_05.html) #########-->
+                    
+        <div class="main-wrap ">
+        
+        <style>
+        .ev-benefit-list{ margin-top:29px; width:810px; float:left;}
+        .ev-benefit-list h2{display:block; padding:0 0 17px 0;}
+        .ev-benefit-list h2 a{color:#111;}
+        .ev-benefit-list h2 a .ico.btn-more{margin-top:-2px;}
+        .bnr-ev{display:block; width:255px; padding:256px 0px 0px 0px; position:relative; color:#111; background-color:#f4f6fb; margin-left:22px; height:370px;  box-sizing:border-box;
+        background-position:center 0; background-repeat:no-repeat; background-size:100% auto; float:left;}
+        .bnr-ev.fst { margin-left:0px;}
+        .bnr-ev ul{display: block; text-align:center; }
+        .bnr-ev li span{display:block;}
+        .bnr-ev li .impo{display: block; font-size: 16px; font-weight: bold; color: #111;  line-height:1.3;}
+        .bnr-ev li .date{color:#666; font-size:14px;}
+        .bnr-ev .pic{width:120px; display:block; margin:-32px 0;}
+        .ev-benefit-list .btn-area{clear:both; padding-top:24px;}
+        .ev-benefit-list .btn-area .more-ev{display:block; width:100%; font-weight:normal;}
+        </style>
+        <div class="ev-benefit-list">
+        <h2><a href="/oap/center/UOAPCC0901M0.jsp?click=da_main_event_link">이벤트 <i class="ico btn-more"></i></a></h2>
+        
+        <style>
+        .bnr-ev.cashback{background-image:url(//static31.samsungcard.com/wcms/oap/images/work/pic_mainev_255x245_sample_v21.png);}
+        </style>
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=97&amp;click=da_main_event_benefit_noti" class="rdbox bnr-ev fst cashback">
+        <ul>
+        <li>
+        <span class="impo space-7">혜택알림<br>최대 15만원 캐시백 혜택</span>
+        <span class="space-8 date">24.5.2~24.5.31</span>
+        </li>
+        </ul>
+        </a>
+        
+        
+        
+        <style>
+        .bnr-ev.kcar{background-image:url(//static31.samsungcard.com/wcms/oap/images/work/pic_mainev_255x245_kcar.png);}
+        </style>
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=179&amp;click=da_main_event_kcar" class="rdbox bnr-ev kcar">
+        <ul>
+        <li>
+        <span class="impo space-7">중고차 찾고 있다면<br>K Car로 오세요</span>
+        <span class="space-8 date">24.5.2~24.5.31</span>
+        </li>
+        </ul>
+        </a>
+        
+        
+        <style>
+        .bnr-ev.jelly{background-image:url(//static31.samsungcard.com/wcms/oap/images/work/pic_mainev_255x245_honda.jpg);}
+        </style>
+        <a href="/oap/center/UOAPCC0902M0.jsp?ntccnid=245&amp;click=da_main_event_honda" class="rdbox bnr-ev jelly" target="_blank">
+        <ul>
+        <li>
+        <span class="impo space-7">혼다 자동차, 다이렉트<br>오토 혜택으로 만나 보세요</span>
+        <span class="space-8 date">24.5.1~24.5.12</span>
+        </li>
+        </ul>
+        </a>
+        
+        <div class="btn-area">
+        <a href="/oap/center/UOAPCC0901M0.jsp?click=da_main_event_link" class="btn-base more-ev">진행중 이벤트 더보기</a>
+        </div>
+        </div>
+        
+        
+        <style>
+        .partner-benefit-list{width:392px; float:right; margin-top:68px;}
+        .bnr-partner{display:block; padding:32px 0px 0px 24px; position:relative;}
+        .bnr-partner ul{display: flex; justify-content: space-between; align-items: flex-start;}
+        .bnr-partner li span{display:block; color:#666; line-height:20px;}
+        .bnr-partner li .impo{display: block; font-size: 24px; font-weight: bold; color: #111;  line-height:1.2; padding-top:3px;}
+        .bnr-partner .pic{width:160px; display:block; float:right; margin-top:-32px;}
+        </style>
+        <div class="partner-benefit-list">
+        <h2 class="hide">제휴사 리스트</h2>
+        
+        <a href="https://www.chabot.kr/samsungcard/index.php?utm_source=Finance_Card&amp;utm_medium=web_banner&amp;utm_campaign=finance_feb&amp;click=da_main_event_chabot" class="rdbox bnr-partner" target="_blank">
+        <ul>
+        <li>
+        <span><i class="maker black">제휴 이벤트</i></span>
+        <span class="impo space-7">수입차 찾고 있다면<br class="mbr"> 차봇 모빌리티</span>
+        <span class="space-8">카드결제 가능한<br> 수입차 전시장 확인하기</span>
+        </li>
+        <li><img src="//static31.samsungcard.com/wcms/oap/images/work/pic_mainpatner_160x206_sample_v1.png" alt="" class="pic"></li>
+        </ul>
+        </a>
+        
+        
+        <a href="/oap/common/UOAPCO0120M0.jsp?click=da_main_event_kcar" class="rdbox bnr-partner" style="margin-top:24px;">
+        <ul>
+        <li>
+        <span><i class="maker black">제휴 이벤트</i></span>
+        <span class="impo space-7">내차팔기 홈서비스<br class="mbr"> 케이카</span>
+        <span class="space-8">타던 차 파는 것도<br> 편리하게 홈서비스로!</span>
+        </li>
+        <li><img src="//static31.samsungcard.com/wcms/oap/images/work/pic_mainpatner_160x206_sample_v2.png" alt="" class="pic"></li>
+        </ul>
+        </a>
+        
+        </div>
+        
+        </div>
+        
+                    <!--#########// (kux)진행 이벤트 / 제휴 이벤트  하단(PC): WCMS (UOAPCO0301M1_05.html) #########-->	
+                    
+                    <!--######### (kux)전체메뉴 및 코드처리 (PC): WCMS (UOAPCO0301M1_06.html) #########-->
+                    
+        <div class="main-wrap">
+        
+        <style>
+        .p_main_sitemap{padding:32px 0 100px 0;}
+        .p_main_sitemap .main_sec_wrap{border:1px solid #e2e5eb; border-radius:12px; padding:28px 20px 30px 24px;}
+        .p_main_sitemap .main_sec_wrap > ul{display:block;}
+        .p_main_sitemap .main_sec_wrap > ul:after{display:block; content:''; clear:both;}
+        .p_main_sitemap .main_sec_wrap > ul > li{width:147px; float:left;  line-height:21px;}
+        .p_main_sitemap strong{color:#101010;font-size:16px; display:inline-block; margin-bottom:22px}
+        .p_main_sitemap li li a{color:#666;font-size:14px}
+        </style>
+        <div class="p_main_sitemap">
+        <div class="main_sec_wrap">
+        <h1 class="hide">전체메뉴</h1>
+        <ul>
+        <li><a href="/oap/product/UOAPFP0101M0.jsp?click=da_main_footer_productinfo"><strong>상품안내</strong></a></li>
+        <li><strong>신차할부</strong>
+        <ul>
+        <li><a href="/oap/card-installment/UOAPNC0101M0.jsp?click=da_main_footer_cardinst">카드할부</a></li>
+        <li><a href="/oap/product/UOAPFP0103M0.jsp?click=da_main_footer_inst">오토할부</a></li>
+        <li><a href="/oap/product/UOAPFP0106M0.jsp?click=da_main_footer_autoloan">오토론</a></li>
+        </ul>
+        </li>
+        <li><a href="/oap/product/UOAPFP0102M0.jsp?click=da_main_footer_cash"><strong>신차일시불</strong></a></li>
+        <li><strong>중고차할부</strong>
+        <ul>
+        <li><a href="/oap/usedcar/UOAPUC0101M0.jsp?click=da_main_footer_usedloan">중고차론</a></li>
+        <li><a href="/oap/usedcar/UOAPUC0101M1.jsp?click=da_main_footer_usedinst">중고차할부</a></li>
+        </ul>
+        </li>
+        <li><a href="/oap/usedcar/UOAPUC0103M0.jsp?click=da_main_footer_usedcar_cash&amp;seaOptC=FPY"><strong>중고차일시불</strong></a></li>
+        <li><a href="/oap/common/UOAPCO0120M0.jsp?click=da_main_footer_mktprice"><strong>내 차 팔기</strong></a></li>
+        <li><strong>고객센터</strong>
+        <ul>
+        <li><a href="/oap/center/UOAPCC0101M0.jsp?click=da_main_footer_faq">자주 하는 질문(FAQ)</a></li>
+        <li><a href="/oap/center/UOAPCC0401M0.jsp?click=da_main_footer_terms">이용약관</a></li>
+        <li><a href="https://www.samsungcard.com/personal/customer-service/privacy/UHPPCC0327M0.jsp?click=da_main_footer_privacy" target="_blank" title="새 창 열림">개인정보 보호정책</a></li>
+        <li><a href="https://www.samsungcard.com/personal/customer-service/customer-rights/credit-information/UHPPCC0333M0.jsp?click=da_main_footer_creditinfo" target="_blank" title="새 창 열림">신용정보 활용체제</a></li>
+        
+        <li><a href="/oap/center/UOAPCC1001M0.jsp?click=da_main_footer_secureprogram">보안프로그램 설치</a></li>
+        <li><a href="/oap/center/UOAPCC0701M0.jsp?click=da_main_footer_publictoken">인증센터</a></li>
+        <li><a href="/oap/center/UOAPCC0801M0.jsp?click=da_main_footer_notice">공지사항</a></li>
+        </ul>
+        </li>
+        <li><strong>마이페이지</strong>
+        <ul>
+        <li><a href="javascript:lgUtil.logInCheckToGoPage('/oap/my-page/UOAPMP0101M0.jsp');">관심 견적 조회</a></li>
+        <li><a href="javascript:lgUtil.logInCheckToGoPage('/oap/my-page/UOAPMP0201M0.jsp');">진행 신청현황</a></li>
+        <li><a href="javascript:lgUtil.logInCheckToGoPage('/oap/my-page/UOAPMP0801M0.jsp');">개인 정보관리</a></li>
+        <li><a href="javascript:lgUtil.logInCheckToGoPage('/oap/my-page/UOAPMP3012M0.jsp');">추천코드 입력 및 현황</a></li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        </div>
+        
+        </div>
+        
+        <script>
+        $(window).load(function(){
+        var mainSr = false;
+        $("#btn_srch_all").click(function(){
+        if(mainSr == true){
+        mainSr = false;
+        $(this).removeClass("on");
+        }else{
+        mainSr = true;
+        $(this).addClass("on");
+        }
+        });
+        });
+        var node = document.getElementsByClassName("brand-slide-area")[0];
+        var nodTxt = '<div class="skel"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>\
+        <span>6</span><span>7</span>';
+        node.innerHTML += nodTxt; //제조사 스켈레톤
+        </script>
+        
+        
+        <script>
+        $(document).ready(function(){
+        var rateInit = [];
+        $.ajax({ //카드신청
+        url:"//static31.samsungcard.com/wcms/oap//fp/js/rateInit.json", dataType:'text',
+        success:function(data){
+        rateInit = (new Function('return '+ data))(); //서버 json이 텍스트로 와서 파싱에러, rateInit = eval('('+data+')'); 대체
+        rateWork(); //페이지별 기준화적용 처리
+        }
+        });
+        function rateWork(){ //페이지별 기준화적용 처리
+        $(".autoInstRateLow").text(rateInit.cashbackRate[0]); //최저 캐시백
+        $(".autoInstRateHigh").text(rateInit.cashbackRate[1]); //최대 캐시백
+        $(".usedCashRateHigh").text(rateInit.cashbackRate[2]); //중고차용 캐시백
+        for(i=0; i < rateInit.cardInst[0].length; i++){//카드할부 > 전기차
+        $(".cardInstEleRate"+i).text(rateInit.cardInst[0][i][1]);
+        }
+        for(i=0; i < rateInit.cardInst[1].length; i++){//카드할부 > 일반
+        $(".cardInstNorRate"+i).text(rateInit.cardInst[1][i][1]);
+        }
+        for(i=0; i < rateInit.autoInst[0].length; i++){//오토할부 > 전기차
+        $(".autoInstEleRate"+i).text(rateInit.autoInst[0][i][1]);
+        }
+        for(i=0; i < rateInit.autoInst[1].length; i++){//오토할부 > 일반
+        $(".autoInstNorRate"+i).text(rateInit.autoInst[1][i][1]);
+        }
+        for(i=0; i < rateInit.autoloan.length; i++){//오토론 > 일반
+        $(".autoloanRate"+i).text(rateInit.autoloan[i][1]);
+        }
+        $(".usedloanRateLow").text(rateInit.usedRate[0][0]); //중고차론 최저
+        $(".usedloanRateHigh").text(rateInit.usedRate[0][1]); //중고차론 최대
+        $(".usedInstRateLow").text(rateInit.usedRate[1][0]); //중고차할부 최저
+        $(".usedInstRateHigh").text(rateInit.usedRate[1][1]); //중고차할부 최대
+        }
+        });
+        </script>
+        
+        
+                    <!--#########// (kux)전체메뉴 및 코드처리 (PC): WCMS (UOAPCO0301M1_06.html) #########-->
+                </section>
+                <footer id="footer">
+                    <style type="text/css">
+                    /* 오류페이지 */
+                    .desktop .no_navi_wrap .header{box-shadow:none}
+                    .no_navi_wrap .contents{min-height:100%}
+                    body.ex_wrap .wrap{height:100%;min-height:100%}
+                    .desktop .no_navi_wrap .contents{margin:-106px auto -170px;}
+                    .desktop .no_navi_wrap .box_700{padding-bottom:230px}
+                    .mobile .no_navi_wrap .box_700{padding:63px 0 82px}
+                    /* 임시 */
+                    .desktop section.car_detail_info > div .m_box{padding-top:0; padding-bottom:0}
+                    .desktop section.car_detail_info>div .m_box dl.up{min-height:340px} /* 20180910 css수정으로 삭제 20181001 */
+                    .contents.partner .innerConts{padding-bottom: 40px !important;} /*20200206 파트너 중고차 신청완료 하단 여백 */
+                    /* 모바일 기기 하단 여백 */
+                    .m12 #footer{margin-bottom:-20px !important;font-size:12px;line-height:1.3;font-family:'Apple Gothic', sans-serif} /* 20181003 mobile버전 풋터추가시 다음줄까지 삭제 에정 */
+                    .m12 .contents{padding-bottom:0 !important;margin-bottom:0 !important}/* 20190417 중고차할부 풋터 겹치는 부분 */
+                    .m12 .contents.partner{margin-bottom:0px !important;}
+                    .m12 body.ex_wrap #footer{margin-bottom:0 !important;} /*오류페이지 높이 100%로인해 추가 */
+                    .m12 body.ex_wrap .contents{padding-bottom:0 !important;margin:-63px auto -82px !important} /*오류페이지 높이 100%로인해 추가 */
+                    /* iframe 마케팅 태그 여백 숨김 */
+                    iframe[name='google_conversion_frame'] {display: none !important;}
+                    .contents>.btn_wrap {margin:30px 0 !important}
+                    .desktop #footer{background-color:#f4f5f9;}
+                    .mobile .footer_wrap{width:auto;}
+                    .m12 #footer .link_scard,
+                    .mobile #footer .link_scard {display:none}
+                    .mobile #footer .border_no {display:block}
+                    /*.w1 #footer .border_no, */.desktop #footer .border_no {display:none}/* 20180908 */
+                    #footer .border_no .footer_wrap .pd_dom, .footer .footer_wrap .mobile_dom {display:none}
+                    .android .ui_appdown_ios, .ios .ui_appdown_android {display:none}
+                    .footer .footer_wrap .pc_dom, #footer .border_no .footer_wrap .mobile_dom {display:block}
+                    .footer {display:none; position:relative; z-index:0;text-align:center;line-height:1.3}/* 20180908*/
+                    .w1 .footer, .footer{display:none; position:relative; z-index:0; color:#606060; font-size:12px; text-align:center; line-height:1.3}
+                    .w1 .footer_wrap:after, .footer_wrap:after {content:''; display:block; clear:both; height:0; visibility:hidden}
+                    .m12 #footer {font-size:12px; line-height:1.3; font-family:'Apple Gothic', sans-serif}
+                    #footer .app_wrap {background:#fff}
+                    #footer .app_wrap h2.tit {padding:14px 0 0 16px; font-size:16px; text-align:left; font-weight:bold; color:#101010}
+                    #footer .new_app_link_scroll {position:relative; padding-bottom:2px; white-space:normal;overflow-x:hidden}/*20171228 스낵가이드*/
+                    #footer .app_wrap .new_app_link {position:relative; padding:0 0 15px 0; text-align:left}
+                    #footer .app_wrap .new_app_link:after{content:''; display:block;clear:both}
+                    #footer .app_wrap .new_app_link li {display:block; width:25%; text-align:center; vertical-align:top;float:left;margin-top:12px}
+                    #footer .app_wrap .new_app_link a {width:auto; position:relative; text-align:center; display:inline-block; margin:0 auto}
+                    #footer .app_wrap .new_app_link a:after {content:''; display:inline-block; position:absolute; top:0; left:50%; margin-left:-26px; width:52px; height:52px;background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/icon_footer_app_v7.png') no-repeat 0 0; background-size:541.5px auto}
+                    #footer .app_wrap .new_app_link a.appcard:after {background-position:-70px 0}
+                    #footer .app_wrap .new_app_link a.directauto:after {background-position:-139px 0}
+                    #footer .app_wrap .new_app_link a.shopping:after {background-position:-210px 0}
+                    #footer .app_wrap .new_app_link a.mls:after {background-position:-280px 0}
+                    #footer .app_wrap .new_app_link a.babystory:after {background-position:-351px 0}
+                    #footer .app_wrap .new_app_link a.gomgom:after {background-position:-422px 0}
+                    #footer .app_wrap .new_app_link a.ajiyangyi:after {background-position:-490px 0}
+                    #footer .app_wrap .new_app_link a span {display:inline-block; padding-top:58px; color:#444; font-size:12px}
+                    #footer .border_no .footer_wrap.footer_wrap_new {background:#f3f5f8 !important;}/* 20180908 */
+                    #footer .border_no .new_sns_link {display:table; width:100%; padding:0; background-color:#fff; border-top:1px solid #d0d0d0}
+                    #footer .border_no .new_sns_link li {display:table-cell; width:20%; padding:15px 0 14px; border-left:0 !important}/* 20180908 */
+                    #footer .border_no .new_sns_link li:first-child {border-left:0}
+                    #footer .border_no .new_sns_link a {width:20px;height:20px; background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/new_ico_footer_snsset_m.png') no-repeat 0 0; background-size:305px auto; display:block; margin:0 auto}
+                    #footer .border_no .new_sns_link a.fb {background-position:0 0}
+                    #footer .border_no .new_sns_link a.insta {background-position:-71.5px 0}
+                    #footer .border_no .new_sns_link a.b {background-position:-145px 0}
+                    #footer .border_no .new_sns_link a.tw {background-position:-152px 0}
+                    #footer .border_no .new_sns_link a.kakao {background-position:-214px 0}
+                    #footer .border_no .new_sns_link a.youtube {background-position:-285px 0}
+                    #footer .border_no .footer_wrap .com_menu_box {padding:21px 10px 12px 20px; text-align:left; line-height:1.3; /*border-top:1px solid #bbbec7;*/ background:/*#f3f5f8*/#e9ebef;
+                    background:url('//static31.samsungcard.com/wcms/oap/images/work/bg_sub_footer_wrap_new.png') no-repeat 0 0; background-size:100% 11px;}/* 20220823 */
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li {display:inline-block; padding:0px 12px 0 0; background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/line_gray_8x1.png') no-repeat right 6px; background-size:1px 11px;letter-spacing:-1px;line-height:22px;margin-right:6px}
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li a, #footer .border_no .footer_wrap .com_menu_box .com_menu li span{color:#575b63;font-size:14px;font-weight:normal}/* 20180908 */
+                    /*#footer .border_no .footer_wrap .com_menu_box .com_menu li:nth-child(3){margin-right:0;padding-right:0;background:none}
+                    @media screen and (min-width:768px) and (max-width:1024px){
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li:nth-child(3){margin-right:12px;padding-right:15px;background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/line_gray_8x1.png') no-repeat right 5px; background-size:1px 11px;}
+                    }*/
+                    @media screen and (min-width:280px) and (max-width:320px){
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li{padding-right:9px;margin-right:2px;letter-spacing: -1.8px;}
+                    }
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li:first-child{background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/line_gray_8x1.png') no-repeat right 5px;background-size:1px 11px}
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li:last-child{background:none; padding-right:0;margin-right:0}
+                    /*#footer .border_no .footer_wrap .com_menu_box .com_menu li.last {padding:0 0 0 7px}*/
+                    #footer .border_no .footer_wrap .com_menu_box p > span {color:#dedede; letter-spacing:-1px; font-size:11px}
+                    #footer .border_no .footer_wrap .com_menu_box p > a {color:#dedede; letter-spacing:0; font-size:12px}
+                    #footer .border_no .footer_wrap .footer_new_copy {position:relative; height:41px;padding:0;color:#9b9fa8; font-size:14px;text-align:left; line-height:1.3;font-family:'Apple Gothic', sans-serif;background:#e9ebef;box-sizing:border-box}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_new_copy a {display:block;right:auto;top:auto;padding:10px 20px 12px;height:auto;text-align:left;background:none !important;border-radius:0;font-size:14px;color:#575b63;font-weight:bold;}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_new_copy a span:after {content:''; display:inline-block; margin-left:8px; width:10.5px; height:6.5px;background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/new_btn_footer_new_copy.png') 0 -6px; background-size:10.5px 25px;vertical-align:2px}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_new_copy .btn_ft_close span:after {content:''; display:inline-block; margin-left:8px; width:10.5px; height:6.5px; background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/new_btn_footer_new_copy.png') 0 0;background-size:10.5px 25px;vertical-align:2px;background-color:#e9ebef}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_new_copy>p{text-align:right;font-size:13px;font-weight:normal;padding:10px 20px 0 0;letter-spacing:-1px;}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_new_copy>p>a{position:relative;font-weight:normal;padding:0;display:inline !important;color:#9b9fa8;font-size:14px}/* 20180908 */
+                    .mobile #footer .border_no .footer_wrap .footer_new_copy>p,
+                    .mobile #footer .border_no .footer_wrap .footer_new_copy>p>a{color:#575b63;}
+                    .mobile  #footer .border_no .footer_wrap .footer_new_copy:after{display:block; content:''; position:absolute; width: calc(100% - 32px); height:1px; left:16px; top:0; background:#dee0e5;}
+                    #footer .border_no .banner_wrap {position:relative; padding:12px 14px 22px;border-top:0; font-size:16px; text-align:left}/* 20180908 */
+                    #footer .border_no .banner_wrap > span {display:inline-block; color:#9b9fa8; font-size:14px; vertical-align:3px}
+                    #footer .border_no .banner_wrap > span:before {content:''; display:inline-block; width:16.5px; height:21px; padding-right:5px; background-image:url('//static31.samsungcard.com/wcms/oap/images/mobile/bg_main_ft_m.png'); background-size:50px 50px; background-position:0 -21px; vertical-align:-4px; line-height:1.3}
+                    #footer .border_no .banner_wrap a {display:block; position:absolute; top:9px; right:14px; width:115px; height:20px; padding:5px 0 4px; background:#8b909c; border-radius:20px; color:#f9f9f9; font-size:14px; text-align:center}
+                    #footer .border_no .banner_wrap .btn_ft_close span:after {content:''}
+                    .mobile .hide {display:inline-block; position:absolute; z-index:-10; height:0; overflow:hidden; opacity:0; font-size:0; line-height:0; word-break:break-all}
+                    #footer .border_no .hide {font-size:5px}
+                    .mobile #footer {padding-bottom:0;background:#e9ebef}/* 20180908 */
+                    #footer .border_no .footer_wrap {margin:0 auto; padding:0 0 120px 0 !important}/* 20190116 */
+                    #footer .border_no .footer_wrap .footer_company {display:none; background:#e9ebef; border-top:0; text-align:left}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_company .com_info{margin-top:0;padding-bottom:3px}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_company .com_info li{font-size:14px; color:#575b63; margin:0;padding-bottom:7px}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_company .com_info li:nth-child(3){margin-right:-12px;}/*20181213*/
+                    #footer .border_no .footer_wrap .footer_company .com_info li strong {display:inline-block; min-width:124px; font-weight:normal;color:#9b9fa8}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_company .com_info+p{color:#9b9fa8;border-top:1px solid #d7d9de;padding-top:8px;font-size:14px;letter-spacing:0}
+                    #footer .border_no .footer_wrap .footer_company p.txt { font-weight:bold; margin-top:10px; font-size:12px}
+                    #footer .border_no .onlymain, .onlymain{display:none;}
+                    #footer .border_no .footer_wrap .footer_company .btn_footer_company{font-size:13px;color:#9b9fa8;margin-left:6px;}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_company .btn_footer_company:before{content:'';display:inline-block;margin-right:8px;height:10px;width:1px;background:#cccccc;vertical-align:middle;}/* 20180908 */
+                    #footer .border_no .footer_wrap .footer_company .btn_footer_company:after{content:'';display:inline-block;margin-left:6px;height:8px;width:5px;background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)mobile/new_btn_footer_new_copy.png') no-repeat 0 -17px;background-size:10.5px 25px;}
+                    #footer .txt_com_copy {background:#e9ebef; } /*20220823*/
+                    #footer .txt_com_copy .lw {margin: 0 16px; padding: 20px 0; color: #666666; font-size: 13.5px; display: block;border-top: 1px solid #dee0e5;border-bottom: 1px solid #dee0e5; position:relative; letter-spacing:0;}
+                    #footer .txt_com_copy  .lw .f_2204_logo{display:block;  position:absolute; top:15px; right:0; width:70px; height:24px; background:url('//static31.samsungcard.com/wcms/oap/images/work/new_2204_f_logo.png') no-repeat; background-size:70px 24px;}
+                    #footer .simple_footer .txt_com_copy .lw{border-bottom:none;}
+                    .footer_wrap .mark_m {position:relative; padding:16px 0 0; border-top:none; text-align:left;background:transparent}/* 20220823 */
+                    .footer_wrap .mark_m:after {content:''; position:absolute; right:0; top:15px; z-index:2; width:32px; height:32px; background:url('//static31.samsungcard.com/wcms/oap/images/work/bg_ft_mark_m_v2.png') no-repeat; background-size:32px 32px;}
+                    .footer_wrap .mark_m .cert_list_m {position:relative; height:48px; overflow-x:scroll; overflow-y:hidden}
+                    .footer_wrap .cert_list_m ul {position:absolute; top:0; left:0; margin-left:20px; width:1148px; height:30px}/* 20180908 */
+                    .footer_wrap .cert_list_m li {float:none;width:auto;display:inline-block}/* 20180908 */
+                    .footer_wrap .cert_list_m li a {display:block; padding-right:10px; color:#9b9fa8}
+                    .mobile .footer_wrap .cert_list_m li a {color:#575b63}
+                    .footer_wrap .cert_list_m li span {font-size:13px; line-height:1.3; letter-spacing:-1px; vertical-align:top}
+                    .footer_wrap .cert_list_m li .ico {display:inline-block; float:left; width:30px; height:30px; padding-right:8px}
+                    .footer_wrap .cert_list_m li .txt {display:inline-block; width:112px; height:30px; color:#9b9fa8; font-size:13px; text-align:left; line-height:1.3}
+                    .mobile .footer_wrap .cert_list_m li .txt {color:#575b63;}
+                    .footer_wrap .cert_list_m .ico img {width:30px; height:30px}
+                    .mobile .com_info a[href^=tel]{font-weight:normal;color:#575b63}
+                    @media screen and (max-width:320px) {
+                    #footer .border_no .footer_wrap .footer_new_copy>p{font-size:12px}
+                    #footer .border_no .footer_wrap .footer_new_copy>p>a{font-size:13px;}
+                    #footer .border_no .footer_wrap .footer_company .com_info li{font-size:12px}
+                    #footer .border_no .footer_wrap .footer_company .btn_footer_company{font-size:12px}
+                    #footer .border_no .footer_wrap .footer_company .com_info li strong{min-width:110px}
+                    #footer .border_no .footer_wrap .footer_company .com_info+p{font-size:12px}
+                    #footer .border_no .footer_wrap .com_menu_box .com_menu li a{font-size:13px}
+                    #footer .border_no .footer_wrap .footer_company .btn_footer_company:before{margin-right:6px}
+                    #footer .app_wrap .new_app_link a span{font-size:11px}}
+                    .w1 #footer, .desktop #footer {position:relative}
+                    .desktop .footer{display:block;height:272px;padding:40px 0;background-color:#f4f5f9; border-top:none !important;box-sizing:border-box}/* 20180908 */
+                    .footer .footer_wrap {position:relative; width:1136px; min-height:218px;margin:0 auto;color:#2b2e38;font-size:13px;font-family:'맑은 고딕', 'Malgun Gothic', 'Apple Gothic', sans-serif; letter-spacing:-1px; line-height:1.3}/* 20180908*/
+                    .footer .footer_wrap .phone_num{height:auto; padding-bottom:4px; border-bottom:1px solid #d3d5da;} /* height:58px; 20180908*/
+                    .footer .footer_wrap .phone_num ul{margin-bottom:9px;overflow:hidden}/* 20180908 */
+                    .footer .footer_wrap .phone_num ul+ul{display:block}/* 20180908 */
+                    .footer .footer_wrap .phone_num ul:first-child{margin-bottom:10px; padding-bottom:0}
+                    .footer .footer_wrap .phone_num li {position:relative; float:left; padding-right:9px; padding-left:9px; line-height:1.3}
+                    .footer .footer_wrap .phone_num li:after {content:''; position:absolute; left:0; top:4px; width:1px; height:12px; background-color:#d0d0d0}
+                    .footer .footer_wrap .phone_num li:first-child {padding-left:0}
+                    .footer .footer_wrap .phone_num li:first-child:after {width:0}
+                    .footer .footer_wrap .phone_num .number {color:#303030; font-size:14px; font-weight:normal}
+                    .footer .footer_wrap .phone_num .f_tel,
+                    .footer .footer_wrap .phone_num .number {color:#303030; font-size:14px; font-weight:normal; letter-spacing:0; font-family:Arial}
+                    .footer_wrap .sns_link {position:absolute; top:-5px; right:0} /* 20180908 */
+                    .chrome .footer_wrap .sns_link {top:-5px}/*20180908*/
+                    .footer_wrap .sns_link a {float:left;width:22px;height:21px;background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)desktop/new_ico_footer_snsset_pc.png') no-repeat 0 0;margin-left:18px;display:block}/* 20180904*/
+                    .footer_wrap .sns_link .fb,
+                    .footer_wrap .sns_link .fb:hover,
+                    .footer_wrap .sns_link .fb:focus {background-position:0 0}
+                    .footer_wrap .sns_link .b,
+                    .footer_wrap .sns_link .b:hover,
+                    .footer_wrap .sns_link .b:focus {background-position:-80px 0}
+                    .footer_wrap .sns_link .insta,
+                    .footer_wrap .sns_link .insta:hover,
+                    .footer_wrap .sns_link .insta:focus {background-position:-40px 0}
+                    .footer_wrap .sns_link .kakao,
+                    .footer_wrap .sns_link .kakao:hover,
+                    .footer_wrap .sns_link .kakao:focus {background-position:-122px 0}
+                    .footer_wrap .sns_link .youtube,
+                    .footer_wrap .sns_link .youtube:hover,
+                    .footer_wrap .sns_link .youtube:focus {background-position:-162px 0}
+                    .footer .footer_wrap .company_info {float:left;padding-top:20px;}/* 20180908 */
+                    .footer .footer_wrap .company_info p {float:left}
+                    .footer .footer_wrap .company_info>p>span:first-child {margin-right:21px}/* 20180908 */
+                    .footer .footer_wrap .company_info .w01 {float:left; margin-left:29px}
+                    .footer .footer_wrap .company_info .w02 {float:left; margin-left:30px}
+                    .footer .footer_wrap .f_menu {width:100%; float:left; padding-top:13px}/* 20180908 */
+                    .footer .footer_wrap .f_menu li {float:left; margin-right:5px}
+                    .footer .footer_wrap .f_menu .pravicy {position:relative; margin-left:4px; padding:0 0 0 9px; background:none}
+                    .footer .footer_wrap .f_menu .pravicy:after, .footer .footer_wrap .f_menu .nbiz_info:after {content:''; position:absolute; left:0; top:4px; width:1px; height:12px; background-color:#d0d0d0}
+                    .footer .footer_wrap .copyright {clear:both; float:left; padding-top:27px; color:#7b7e86; font-size:14px;letter-spacing:0;font-family:Arial;}/* 20180908 */
+                    .footer .footer_wrap .f_menu .nbiz_info a, .footer .footer_wrap .f_menu .nbiz_info{position:relative;}/*20220405*/
+                    .footer .footer_wrap .f_menu .nbiz_info{margin-left:5px;}
+                    .footer .footer_wrap .f_menu .nbiz_info a{display:inline-block;margin-left:9px;}
+                    .footer .footer_wrap .f_menu .nbiz_info a:after{content:'';position:absolute;top:0;right:-16px;margin-top: 0;margin-left: 0;width: 30px;height: 15px;background: url(//static31.samsungcard.com/wcms/oap/images/desktop/ico_footer_arrow.png) no-repeat 7px -8px;}
+                    .footer .footer_wrap .f_familysite {display:block;float:none;position:absolute;right:0; margin-top:0;width:182px;height:38px; border:1px solid #808789;border-radius:2px;background-color:#fafbfd; z-index:20;line-height:38px !important;top:41px} /* 20180908 */
+                    .footer .footer_wrap .f_familysite button {display:block; width:180px; padding:0 15px; box-sizing:border-box; color:#7b7e86; font-size:15px; line-height:34px !important; vertical-align:top; text-decoration:none; text-align:left; outline-color:transparent; -webkit-appearance:none; border:none; text-indent:0;letter-spacing:-1px}
+                    .footer .footer_wrap .f_familysite > button:after {display:block; position:absolute; top:50%; right:13px; margin-top:-4.5px; width:15px; height:9px; background:url('//static31.samsungcard.com/wcms/oap/images/(1.5)desktop/bg_select_new.png') 0 0 no-repeat; content:'';}/* 20180908 */
+                    .footer .footer_wrap .f_familysite > button.fs_on:after {content:''; background-position:0 -10px}
+                    .footer .footer_wrap .f_familysite .f_familysite_list {display:none; position:absolute; bottom:38px; left:-1px; right:-1px; background:#fff; border:1px solid #686868; border-bottom:1px solid #b8b8b8; border-radius:2px 2px 0 0; background:#fff; max-height:226px}
+                    .footer .footer_wrap .f_familysite .f_familysite_list .scrollview{position:relative;margin-right:5px;border-right:4px solid #fff}
+                    .footer .footer_wrap .f_familysite .f_familysite_list li a {display:block; padding:8px 15px; text-align:left; font-size:14px; color:#686868; line-height:100%} /* 20180908 */
+                    .footer .footer_wrap .ui_scrollbar{position:absolute; width:14px; cursor:pointer; right:0}
+                    .footer .footer_wrap .ui_scrollbar span{width:8px;}
+                    .footer .footer_wrap .mark {clear:both; float:left; width:623px; margin-top:22px; padding:0 31px; box-sizing:border-box} /* 20180908 */
+                    .footer .footer_wrap .mark .owl-nav {display:block !important}
+                    .footer .footer_wrap .mark .owl-nav button {margin-top:-16px}
+                    .footer .footer_wrap .mark .owl-prev,
+                    .footer .footer_wrap .mark .owl-next {width:30px; height:30px}
+                    .footer .footer_wrap .mark .owl-prev {left:-40px}
+                    .footer .footer_wrap .mark .owl-nav .owl-prev:after {content:''; position:absolute; top:0; right:0; margin-top:0; margin-left:0; margin-right:0; width:30px; height:30px; background:url('//static31.samsungcard.com/wcms/oap/images/desktop/ico_footer_arrow.png') no-repeat 0 -30px}
+                    .footer .footer_wrap .mark .owl-nav .owl-next {width:30px; height:30px; right:-39px}
+                    .footer .footer_wrap .mark .owl-nav .owl-next:after {content:''; position:absolute; top:0; right:0; margin-top:0; margin-left:0; width:30px; height:30px; background:url('//static31.samsungcard.com/wcms/oap/images/desktop/ico_footer_arrow.png') no-repeat 0 0}
+                    .footer .footer_wrap .mark .item {float:left}
+                    .footer .footer_wrap .mark .item .ico {display:inline-block; float:left; margin-right:8px}
+                    .footer .footer_wrap .mark .item .ico img {width:32px; height:32px}
+                    .footer .footer_wrap .mark .item .txt {display:inline-block; float:left; margin-right:0; color:#747474; font-size:11px; line-height:16px; text-align:left;margin-top:-3px}  /* 20180908*/
+                    .footer .footer_wrap .logo a {display:block; width:97px;height:33px;background:url('//static31.samsungcard.com/wcms/oap/images/work/new_2204_p_f_logo.png') no-repeat; background-size:97px 33px;}/* 20180908 */
+                    .footer .footer_wrap .logo {position:absolute; width:97px;bottom:0;right:0px;}/* 20180908*/
+                    .chrome .footer .footer_wrap .logo {top:auto;bottom:65px}
+                    .chrome .footer .footer_wrap .f_familysite {top:41px}/* 20180908*/
+                    .footer .footer_wrap .owl-nav button.disabled {opacity:1}
+                    .w1 .footer_wrap .f_familysite > button.fs_on{border:none !important}
+                    @media screen and (max-width:1024px){
+                    .footer .footer_wrap{width:800px !important}
+                    }
+                    .pageTop{width:45px; height:45px;background:url('/images/oap/mobile/bg_page_top.png') no-repeat 50% 0; background-size:auto 45px; transform:translate(-6px,-65px);}
+                    .desktop .pageTop {width:66px;height:70px;background: url('/images/oap/desktop/bg_button_skin.png') no-repeat 0 0;background-size:66px 70px; transform:translate(-1px,-73px);}
+                    .cb_bnr{ transform:translate(0px, 0px);}
+                    .desktop .pageTop:hover, .desktop .pageTop:focus {background:url('/images/oap/desktop/bg_button_skin_over.png') no-repeat 0 0;background-size:66px 70px}
+                    .mobile  .contents .t_group{transition:unset} /* 20180906 임시 */
+                    .footer.simple_footer .sim_f, .footer.footer_wrap_new .new_f{display:none !important}
+                    .footer.footer_wrap_simple .sim_f, .footer.footer_wrap_simple .new_f, .footer.footer_wrap_simple .fwrap_f{display:none !important}
+                    .footer.simple_footer, .footer.footer_wrap_simple{height:170px;padding-top:36px}
+                    .footer.footer_wrap_simple .footer_wrap .company_info, .footer.footer_wrap_simple .footer_wrap .copyright,
+                    .footer.simple_footer .footer_wrap .company_info, .footer.simple_footer .footer_wrap .copyright{padding-top:14px}
+                    .footer.simple_footer .footer_wrap, .footer.footer_wrap_simple .footer_wrap{min-height:92px}
+                    .footer.footer_wrap_simple .footer_wrap .logo, .footer.simple_footer .footer_wrap .logo{bottom:-16px;top:auto}
+                    .border_no.simple_footer .sim_f, .border_no.footer_wrap_simple .sim_f, .border_no.footer_wrap_simple .fwrap_f, .border_no.simple_footer .fwra_f2, .border_no.footer_wrap_new .new_f{display:none}
+                    .border_no.footer_wrap_simple .fwra_f2{display:block}
+                    .com_tel{overflow:hidden;font-size:14px;color:#575b63}
+                    .com_tel>strong{display:block;float:left}
+                    .com_tel>a{display:block;float:right;color:#575b63;font-weight:normal;padding-right:10px}
+                    .foot_new_copy{font-size:14px;color:#9b9fa8;background:#e9ebef}
+                    .foot_new_copy>span{display:block;border-top:1px solid #d7d9de;padding:8px 0 17px;margin:0 20px}
+                    #footer .border_no.footer_wrap_simple .footer_wrap{padding-bottom:0 !important}
+                    #footer .border_no.simple_footer .footer_wrap{padding-bottom:60px !important}
+                    .desktop .btn_loan_stepbox.clone{bottom:272px;}
+                    .ux_li_sec_wrap .m_lim_step .m_step_wrap{overflow-y:unset;}/* 할부가능확인용 */
+                    .only_desktop a:first-child{ display:none;} /* 20181112 header메뉴 견적내기 hidden처리 */
+                    .footer_wrap .lr_tel, /*20210202 리스렌트 상담 전화 추가*/
+                    .footer_wrap .lr_tel > a{color: #575b63; font-size: 14px; font-weight:normal; line-height:22px;}
+                    .simple_footer .footer_wrap .simple_not{display:none;}
+                    </style>
+                    
+                    <div class="border_no footer_class_mo footer_wrap_new">
+                    <script type="text/javascript">
+                    if(location.href.indexOf('/oap/partner/') > -1){
+                    var footerElmo = document.getElementsByClassName('footer_class_mo');
+                    footerElmo[0].classList.remove('footer_wrap_new');
+                    footerElmo[0].classList.add('simple_footer');
+                    }
+                    </script>
+                    <div class="footer_wrap">
+                    
+                    <ul class="new_sns_link onlymain">
+                    <li><a href="https://www.facebook.com/withsamsungcard" class="fb" target="_blank" title="새 창 열림"><span class="hide">facebook 바로가기</span></a></li>
+                    <li><a href="https://www.instagram.com/withsamsungcard/" class="insta" target="_blank" title="새 창 열림"><span class="hide">인스타그램 바로가기</span></a></li>
+                    <li><a href="http://blog.samsungcard.com" class="b" target="_blank" title="새 창 열림"><span class="hide">blog 바로가기</span></a></li>
+                    
+                    <li><a href="http://plus.kakao.com/home/@삼성카드" class="kakao" target="_blank" title="새 창 열림"><span class="hide">카카오톡 바로가기</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC4h1I4jNS4u-4WNT08mKKqw" class="youtube" target="_blank" title="새 창 열림"><span class="hide">youtube 바로가기</span></a></li>
+                    </ul>
+                    <div class="com_menu_box">
+                    <ul class="com_menu sim_f">
+                    <li><a href="/oap/center/UOAPCC0401M0.jsp">이용약관</a></li>
+                    <li><a href="https://www.samsungcard.com/personal/customer-service/privacy/UHPPCC0327M0.jsp?click=main_footer_privacy" target="_blank" title="새 창 열림"><strong>개인정보 처리방침</strong></a></li>
+                    <li><a href="https://www.samsungcard.com" target="_blank" title="새 창 열림">삼성카드 홈페이지</a></li>
+                    <li><a href="/oap/center/UOAPCC2001M0.jsp">고객센터</a></li>
+                    <li><span>삼성카드 자동차금융 상담센터</span> <a href="tel:1688-3001" class="tel">1688-3001</a></li>
+                    </ul>
+                    
+                    <div class="com_tel new_f">
+                    <strong>삼성카드 자동차금융 상담센터(ARS)</strong> <a href="tel:1688-3001">1688-3001</a>
+                    </div>
+                    </div>
+                    <div class="footer_new_copy">
+                    <a href="#" class="ui_footInfo"><span>사업자 정보</span></a>
+                    <a href="javascript:;" class="btn_ft_open"><span>사업자 정보</span><span class="hide">열기, 현재 닫혀있는 상태</span></a>
+                    <a href="javascript:;" class="btn_ft_close" style="display:none;"><span>사업자 정보</span><span class="hide">닫기, 현재 열려있는 상태</span></a>
+                    <p>대표전화<span class="ls0">(ARS)</span> <a href="tel:1588-8700" class="tel">1588-8700</a></p>
+                    </div>
+                    <div class="footer_company">
+                    <ul class="com_info">
+                    <li><strong>대표이사 사장</strong> 김대환</li>
+                    <li><strong>주소</strong>서울 중구 세종대로 <span class="ls0">67 (04514)</span></li>
+                    <li><strong>사업자 등록번호</strong><span class="ls0">202-81-45602</span><a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2028145602&amp;apv_perm_no=" title="새 창" target="_blank" class="btn_footer_company">사업자정보 확인</a></li>
+                    <li><strong>통신판매업 신고번호</strong>제 <span class="ls0">2009</span>-서울중구-<span class="ls0">1449</span>호</li>
+                    </ul>
+                    
+                    </div>
+                    <div class="txt_com_copy">
+                    <div class="lw">
+                    ⓒ SAMSUNG CARD CO., LTD.<a href="https://www.samsungcard.com" target="_blank" title="새 창 열림" class="f_2204_logo"><span class="hide">Samsung Financial Networks</span></a>
+                    </div>
+                    </div>
+                    
+                    <div class="mark_m sim_f">
+                    <div class="cert_list_m">
+                    <ul>
+                    
+                    
+                    
+                    
+                    <li>
+                    <a title="새 창" href="http://www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank">
+                    <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/mobile/ico_f_award03_m.jpg" alt=""></span>
+                    <span class="txt">국가고객만족도<br>10년 연속 1위</span> 
+                    </a>
+                    </li>
+                    <li>
+                    <a title="새 창" href="http://www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank">
+                    <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/desktop/ico_f_awd05.jpg" alt=""></span>
+                    <span class="txt">한국서비스대상<br>명예의 전당</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a title="새 창" href="http://www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank">
+                    <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/desktop/ico_f_awd06.jpg" alt=""></span>
+                    <span class="txt">고객만족경영대상<br>명예의 전당</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a title="새 창" href="http://www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank">
+                    <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/mobile/ico_f_awd10.jpg" alt=""></span>
+                    <span class="txt">카드결제산업<br>데이터보안표준 인증</span>
+                    </a>
+                    </li>
+                    <li>
+                    <a title="새 창" href="http://www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank">
+                    <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/work/ico_f_awd11.jpg" alt=""></span>
+                    <span class="txt">정보보호/개인정보<br>관리체계 인증</span>
+                    </a>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="footer footer_class_pc footer_wrap_new" style="border-top: 1px solid rgb(224, 224, 224);">
+                    <script type="text/javascript">
+                    if(location.href.indexOf('/oap/partner/') > -1){
+                    var footerEl = document.getElementsByClassName('footer_class_pc');
+                    footerEl[0].classList.remove('footer_wrap_new');
+                    footerEl[0].classList.add('simple_footer');
+                    }
+                    </script>
+                    <div class="footer_wrap ">
+                    <div class="phone_num">
+                    <ul>
+                    <li class="mobile"><span class="num_tit">삼성카드 자동차금융 상담센터(ARS)</span> <span class="number"><span class="f_tel">1688-3001</span></span></li>
+                    
+                    <li><span class="num_tit">삼성카드 대표전화(ARS)</span> <span class="number"><span class="f_tel">1588-8700</span></span></li>
+                    <li class="new_f"><a href="https://www.samsungcard.com/personal/customer-service/privacy/UHPPCC0327M0.jsp?click=main_footer_privacy" target="_blank" title="새 창 열림"><strong>개인정보 처리방침</strong></a></li>
+                    </ul>
+                    </div>
+                    <div class="sns_link pc_dom sim_f">
+                    <a href="https://www.facebook.com/withsamsungcard" class="fb" target="_blank" title="새 창"><span class="hide">facebook 바로가기</span></a>
+                    <a href="https://www.instagram.com/withsamsungcard/" class="insta" target="_blank" title="새 창"><span class="hide">인스타그램 바로가기</span></a>
+                    <a href="http://blog.samsungcard.com" class="b" target="_blank" title="새 창"><span class="hide">blog 바로가기</span></a>
+                    <a href="http://plus.kakao.com/home/@삼성카드" class="kakao" target="_blank" title="새 창"><span class="hide">카카오톡 바로가기</span></a>
+                    <a href="https://www.youtube.com/channel/UC4h1I4jNS4u-4WNT08mKKqw" class="youtube" target="_blank" title="새 창"><span class="hide">youtube 바로가기</span></a>
+                    </div>
+                    <div class="f_menu sim_f">
+                    <ul>
+                    <li class="pc_dom"><a href="/oap/center/UOAPCC0401M0.jsp">이용약관</a></li>
+                    <li class="pravicy mobile"><a href="https://www.samsungcard.com/personal/customer-service/privacy/UHPPCC0327M0.jsp?click=main_footer_privacy" target="_blank" title="새 창 열림"><strong>개인정보 처리방침</strong></a></li>
+                    <li class="pc_dom nbiz_info"><a href="https://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank" title="새 창">사업자정보 확인</a></li>
+                    </ul>
+                    </div>
+                    <div class="f_familysite ui_familysite sim_f">
+                    <button type="button" title="삼성카드 패밀리사이트 목록 열기">패밀리사이트</button>
+                    <div class="f_familysite_list">
+                    <div class="ui_scrollview" tabindex="0">
+                    <div class="ui_scrollarea">
+                    <div class="ui_content">
+                    <ul>
+                    
+                    <li><a href="https://shopping.samsungcard.com/shopping/USHPFO0110M1.jsp?click=footer_family" target="_blank">쇼핑</a></li>
+                    <li><a href="http://travel.samsungcard.com/main/UTRVCO0101M0.jsp?click=footer_family" target="_blank" title="새 창">여행</a></li>
+                    
+                    <li><a href="http://wedding.samsungcard.com/main/UWDDWDCO01M0.jsp?click=footer_family" target="_blank" title="새 창">웨딩</a></li>
+                    <li><a href="http://insurance.samsungcard.com/main/UISRCO0101M0.jsp?click=footer_family" target="_blank" title="새 창">보험</a></li>
+                    
+                    
+                    <li><a href="https://www.samsungcard.com/personal/mobile/pet/UHPPMO0114M0.jsp?click=footer_family" target="_blank" title="새 창">아지냥이</a></li>
+                    
+                    <li><a href="http://www.samsungcard.com/csr/main/USCCCO0101M0.jsp?click=footer_family" target="_blank" title="새 창">열린나눔</a></li>
+                    <li><a href="http://younglab.samsungcard.com/main/UYLBCO0101M0.jsp?click=footer_family" target="_blank" title="새 창">Young Lab</a></li>
+                    <li><a href="http://www.u-point.co.kr/index.jsp?click=footer_family" target="_blank" title="새 창">U포인트</a></li>
+                    <li><a href="http://www.samsungcardcustomerservice.com/main.do?click=footer_family" target="_blank" title="새 창">삼성카드고객서비스</a></li>
+                    
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="scroll ui_scrollbar" style="display: none;"><span class="bg_top"></span><span class="bg_mid" style="padding-bottom: 0px;"></span><span class="bg_btm"></span></div></div>
+                    </div>
+                    </div>
+                    <div class="company_info">
+                    <p><span>대표이사 사장 김대환</span><span>서울 중구 세종대로 <span class="ls0">67 (04514)</span></span></p>
+                    <span class="w01">사업자등록번호 <span class="ls0">202-81-45602</span></span>
+                    <span class="w02 fwrap_f">통신판매업 신고번호 제 <span class="ls0">2009</span>-서울중구-<span class="ls0">1449</span>호</span>
+                    </div>
+                    <div class="copyright">© SAMSUNG CARD CO., LTD. <span class="w01">All rights reserved.</span></div>
+                    <div class="logo"><a href="https://www.samsungcard.com" target="_blank" title="새 창 열림"><span class="hide">Samsung Financial Networks</span></a></div>
+                    <div class="mark sim_f">
+                    <div class="owl-carousel ui_cert_list owl-loaded owl-drag"><div class="owl-dots disabled"></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 846px;"><div aria-hidden="false" class="owl-item active" style="width: 138px; margin-right: 3px;"><div class="item">
+                    <a title="새 창" href="//www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank" tabindex="0"> <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/desktop/ico_f_awd03.jpg" alt=""></span> <span class="txt">국가고객만족도<br>10년 연속 1위</span></a> 
+                    </div></div><div aria-hidden="false" class="owl-item active" style="width: 138px; margin-right: 3px;"><div class="item">
+                    <a title="새 창" href="//www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank" tabindex="0"> <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/desktop/ico_f_awd05.jpg" alt=""></span> <span class="txt">한국서비스대상<br>명예의 전당</span></a>
+                    </div></div><div aria-hidden="false" class="owl-item active" style="width: 138px; margin-right: 3px;"><div class="item">
+                    <a title="새 창" href="//www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank" tabindex="0"> <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/desktop/ico_f_awd06.jpg" alt=""></span> <span class="txt">고객만족경영대상<br>명예의 전당</span></a>
+                    </div></div><div aria-hidden="false" class="owl-item active" style="width: 138px; margin-right: 3px;"><div class="item">
+                    <a title="새 창" href="//www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank" tabindex="0"> <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/desktop/ico_f_awd09_v1.jpg" alt=""></span> <span class="txt">카드결제산업<br>데이터보안표준 인증</span></a>
+                    </div></div><div aria-hidden="true" class="owl-item" style="width: 138px; margin-right: 3px;"><div class="item">
+                    <a title="새 창" href="//www.samsungcard.com/company/PR/prize/UHPPCI0149M0.jsp?click=main_footer_prize" target="_blank" tabindex="-1"> <span class="ico"><img src="//static31.samsungcard.com/wcms/oap/images/work/ico_f_awd11.jpg" alt=""></span> <span class="txt">정보보호/개인정보<br>관리체계 인증</span></a>
+                    </div></div><div aria-hidden="true" class="owl-item" style="width: 138px; margin-right: 3px;"><div class="item"></div></div></div></div><div class="owl-nav"><button type="button" class="owl-prev disabled"><span class="hide">이전 내용</span></button><button type="button" class="owl-next"><span class="hide">다음 내용</span></button></div></div>
+                    </div>
+                    </div>
+                    </div>
+                    </footer>
+</body>
+</html>
