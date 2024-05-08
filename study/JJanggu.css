@@ -1,7 +1,24 @@
-#out_box {
-  width: 500px;
-  height: 500px;
-  background-image: url("./Wkdrn.jpg");
+.out_box {
+  position: relative;
+  width: 830px;
+  height: 1200px;
+  margin: 60px auto;
+  background-color: pink;
+  background-image: url("spongG.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
+.text_box {
+  width: 830px;
+  height: 1200px;
+  margin: 60px auto;
+  background-color: rgb(254, 255, 192);
+  transition: all 0.7s ease;
+  background-position: center;
+  transform: scale(0);
+}
+.out_box:hover .text_box {
+  transform: scale(1) rotate(360deg);
+}
+
+/* 상자 어떻게 없애지..? */

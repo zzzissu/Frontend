@@ -1,0 +1,70 @@
+.line {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  box-sizing: border-box;
+}
+.line2 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.line,          /* 화면 가운데 위치 */
+.line2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 247, 248); /* 제거 해도 됨(위치 미리 보려고 지정함) */
+}
+.line:before,
+.line:after,
+.line2:after,
+.line2:before {
+  transition: all 1s ease;
+  display: block;
+  content: "";
+  position: absolute;
+  background: pink;
+  z-index: 100;
+}
+.line:before {
+  top: 0;
+  left: 0;
+  right: 100%;
+  height: 12px;
+}
+.line:hover:before {
+  transition-delay: 0.3s;
+  right: 0;
+}
+.line:after {
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  width: 12px;
+}
+.line:hover:after {
+  transition-delay: 1s;
+  bottom: 0;
+}
+.line2:after {
+  bottom: 0;
+  right: 0;
+  left: 100%;
+  height: 12px;
+}
+.line2:hover:after {
+  transition-delay: 1.7s;
+  left: 0;
+}
+.line2:before {
+  bottom: 0;
+  left: 0;
+  top: 100%;
+  width: 12px;
+}
+.line2:hover:before {
+  transition-delay: 2.5s;
+  top: 0;
+}
