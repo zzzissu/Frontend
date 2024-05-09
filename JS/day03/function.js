@@ -55,11 +55,11 @@ function printAll(...args) {
 printAll("dream", "coding", "javis", "adam", 1, 2);
 
 // 함수 출력
-function add(num1, num2) {
-  return num1 + num2;
-}
-const res = add(10, 20);
-console.log(res);
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
+// const res = add(10, 20);
+// console.log(res);
 
 // 함수 표현식
 // let func = function () { }           // 함수를 변수에 할당시킨다.
@@ -129,3 +129,60 @@ const printNo = function () {
 
 randomQuiz("I love you", printYes, printNo);
 randomQuiz("wrong", printYes, printNo);
+
+// ----------------------------------------------- 4일차
+// function quiz
+// function calculate(command, a, b)
+// command: add, sub, divide, mul
+
+// function calculate(command, a, b) {
+// if (command === add) {
+//   return a + b;
+// } else if (command === sub) {
+//   return a - b;
+// } else if (command === divide) {
+//   return a / b;
+// } else id(command === mul) {
+//   return a * b;
+// }
+// or
+//   switch (command) {
+//     case "add":
+//       return a + b;
+//     case "sub":
+//       return a - b;
+//     case "div":
+//       return a / b;
+//     case " mul":
+//       return a * b;
+//     default:
+//       throw Error("unknown command!!");
+//   }
+// }
+// console.log(calculate("add", 10, 20));
+
+// 함수를 입력 파라미터로 받을 때는 함수이름을 전달한다.
+// function doSomething(add1) {
+//   console.log(add1);
+//   const res3 = add(2, 3);
+//   console.log(res3);
+// }
+// function add1(a, b) {
+//   const sum = a + b;
+//   return sum;
+// }
+// doSomething(add1);
+
+// 콜백의 다형성
+function add(num3, num4) {
+  return num3 + num4;
+}
+function mul(num3, num4) {
+  return num3 * num4;
+}
+function surpise(callback) {
+  // 출력을 원하는 형태로 만들기 위해 사용, 입력으로 전달되는 함수, 부르면 실행됨(콜백)
+  const result = callback(2, 3);
+  console.log(result);
+}
+surpise(mul);
