@@ -91,3 +91,5 @@ console.log(tri instanceof Rectangle);
 console.log(tri instanceof Triangle);
 console.log(tri instanceof Shape);
 console.log(tri instanceof Object);
+
+class Counter {}
