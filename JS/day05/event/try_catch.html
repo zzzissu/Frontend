@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let solution = 55;
+      function guess_num() {
+        try {
+          let x = document.getElementById("number").value;
+          if (solution > x) {
+            // 일부러 에러발생
+            throw "작음";
+          } else {
+            if (solution == x) {
+              throw "정답";
+            }
+            if (solution < x) {
+              throw "입력한 숫자보다 큽니다.";
+            }
+            if (solution > x) {
+              throw "입력한 숫자보다 작습니다.";
+            }
+          }
+        } catch (err) {
+          let e = document.getElementById("hint_message");
+          e.innerHTML = "힌트: " + err;
+        }
+      }
+      //   function guess_num() {
+      //     try {
+      //         let x = document.getElementById("number").value;
+      //         console.log(typeof(x));
+      //         console.log(typeof(solution));
+      //         if( x > solution) throw "너무 큽니다.";
+      //         else if(x < solution) throw "너무 작음";
+      //     } catch(err) {
+      //         let e = document.getElementById("hint_message");
+      //       e.innerHTML = "힌트: " + err;
+      //     }
+      //   }
+    </script>
+    <h1>number Guess</h1>
+    <p>1부터 100사이의 숫자를 입력하시오.</p>
+    <input type="text" id="number" />
+    <button type="button" onclick="guess_num()">숫자추측</button>
+    <p id="hint_message"></p>
+  </body>
+</html>

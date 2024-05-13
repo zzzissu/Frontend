@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자리 배치도</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>자리 배치도</h1>
+    <script>
+      let memNum = prompt("인원 수: ");
+      let colNum = prompt("한 줄에 몇명씩 앉겠습니까? ");
+
+      if (memNum % colNum == 0) rowNum = parseInt(memNum / colNum);
+      else rowNum = parseInt(memNum / colNum) + 1;
+      document.write("<table>");
+      for (let i = 0; i < rowNum; i++) {
+        document.write("<tr>");
+      }
+
+      //   let line = Math.floor(memNum / colNum);
+      //   console.log(line);
+      //   document.write(`<table>`);
+      //   let index = 0;
+      //   for (let i = 1; i <= row + 1; i++) {
+      //     document.write(`<tr>`);
+      //     for (let a = 1 + colNum * index; a <= colNum * i; a++) {
+      //       if (a > memNum) {
+      //         break;
+      //       }
+      //       document.write(`<td>좌석${a}</td>`);
+      //       console.log(index);
+      //     }
+      //     document.write(`</tr>`);
+      //     index++;
+      //   }
+
+      for (let i = 0; i < rowNum; i++) {
+        for (let j = 1; j <= colNum && j + colNum * i <= memNum; j++) {
+          // break문을 사용하지 않을 때
+          // for (let j = 1; j <= colNum; j++) {                  // break문을 사용할 때
+          //   if (j + colNum * i > memNum) break;
+          //   document.write(`${j + colNum * i} `);
+          document.write(j + colNum * i + " ");
+        }
+        document.write("<br>");
+      }
+      document.write(`</table>`);
+    </script>
+  </body>
+</html>
