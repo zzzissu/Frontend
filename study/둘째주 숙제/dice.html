@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+    <style>
+        #wrap {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+            margin-top: 200px;
+        }
+
+        .dice {
+            transform-style: preserve-3d;
+            /* animation: rotate 6s infinite linear; */     /* 무한반복 시 사용 */
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .square {
+            position: absolute;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 3px solid rgb(128, 128, 128, 0.6);
+            background-color: rgb(255, 192, 203, 0.4);
+            width: 300px;
+            height: 300px;
+            font-size: 80px;
+            font-weight: 550;
+            color: rgb(255, 160, 176);
+        }
+
+        .dice:hover {
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+                transition: all ease 8s;           /* 회전 속도 설정 */
+			}
+
+        /* @keyframes rotate {              // 호버하지 않고 계속 돌게 하기
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        } */
+
+        /* 상자 위치 설정 */
+        .one { transform: rotateY(360deg) translateZ(150px); }
+        .two { transform: rotateY(270deg) translateZ(150px); }
+        .three { transform: rotateY(180deg) translateZ(150px); }
+        .four { transform: rotateY(90deg) translateZ(150px); }
+        .five { transform: rotateX(270deg) translateZ(150px); }
+        .six { transform: rotateX(90deg) translateZ(150px); }
+        .background {
+            background-color: rgba(43, 43, 43, 0.8);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="dice">
+            <div class="square one">1</div>
+            <div class="square two">2</div>
+            <div class="square three">3</div>
+            <div class="square four">4</div>
+            <div class="square five">5</div>
+            <div class="square six">6</div>
+            <div class="square background"></div>
+        </div>
+    </div>
+</body>
+</html>

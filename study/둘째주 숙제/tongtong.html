@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tongtong</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(193, 217, 193);
+
+            animation-name: move;
+            animation-duration: 2.5s;
+            animation-iteration-count: 6;
+            animation-direction: alternate;     /* 모션 앞 뒤로 반복 */
+            animation-timing-function: linear;
+
+            animation-fill-mode: forwards;
+        }
+        @keyframes move{
+				
+				0%{
+					transform: translate(0,0);
+                    border-radius: 5%;
+				}
+                25%{
+                    transform: translate(100px,100px);
+                    border-radius: 20%;
+                }
+				50%{
+                    transform: translate(200px,0px);
+                    border-radius: 30%;
+                }
+				75%{
+                    transform: translate(300px,100px);
+                    border-radius: 40%;
+				}
+                100%{
+                    transform: translate(400px,0px);
+                    border-radius: 50%;
+                }
+			}
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
